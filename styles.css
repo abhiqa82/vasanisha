@@ -97,11 +97,10 @@ p {
     border: 2px solid rgba(255, 255, 255, 0.8);
     transition: none;
     font-weight: 500;
-    padding: 12px 30px;
-    border-radius: 6px;
+    padding: 12px 24px;
+    border-radius: var(--border-radius);
     text-decoration: none;
     display: inline-block;
-    margin-top: 20px;
 }
 .hero .btn-secondary:hover {
     background-color: transparent;
