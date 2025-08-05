@@ -1,0 +1,45 @@
+# Vasanisha Website Robots.txt
+# Professional App Development & Digital Transformation Services
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Specific directives for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# Disallow specific directories (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cache/
+
+# Allow important files
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /styles.css
+Allow: /script.js
+
+# Sitemap location
+Sitemap: https://vasanisha.blogspot.com/sitemap.xml
+
+# Additional sitemaps (if you have more)
+# Sitemap: https://vasanisha.blogspot.com/sitemap-images.xml
+# Sitemap: https://vasanisha.blogspot.com/sitemap-news.xml
+
+# Host directive (if you have multiple domains)
+# Host: https://vasanisha.blogspot.com 
