@@ -90,15 +90,25 @@ p {
     transform: translateY(-2px);
 }
 
-/* Remove effects from "Our Services" button in hero section */
+/* "Our Services" button styling in hero section */
 .hero .btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.8);
     transition: none;
+    font-weight: 500;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
 }
 .hero .btn-secondary:hover {
     background-color: transparent;
-    color: var(--primary-color);
+    color: white;
     transform: none;
     box-shadow: none;
+    border-color: rgba(255, 255, 255, 1);
 }
 
 /* Navigation */
@@ -728,6 +738,10 @@ select.error:focus {
     text-align: center;
 }
 
+.contact-header p {
+    color: white;
+}
+
 .contact-header h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -817,6 +831,10 @@ select.error:focus {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: white;
     text-align: center;
+}
+
+.work-header p {
+    color: white;
 }
 
 .work-header h1 {
