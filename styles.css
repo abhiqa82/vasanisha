@@ -998,7 +998,16 @@ select.error:focus {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: white;
     text-align: center;
-    padding: 120px 0 80px;
+    padding: 140px 0 100px;
+}
+
+/* Adjust spacing for section headers */
+.section-header {
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    margin-bottom: 1.5rem;
 }
 
 .usecase-hero h1 {
@@ -1310,6 +1319,42 @@ select.error:focus {
     background-color: white;
     color: var(--primary-color);
     transform: translateY(-2px);
+}
+
+/* Use Cases CTA Button Styling */
+.usecase-cta-btn {
+    border: 2px solid #2196F3;
+    background-color: rgba(33, 150, 243, 0.1);
+    transition: none;
+}
+
+.usecase-cta-btn:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.btn-light.usecase-cta-btn {
+    background-color: rgba(33, 150, 243, 0.1);
+    color: #2196F3;
+    border: 2px solid #2196F3;
+}
+
+.btn-light.usecase-cta-btn:hover {
+    background-color: rgba(33, 150, 243, 0.1);
+    color: #2196F3;
+    transform: none;
+}
+
+.btn-outline-light.usecase-cta-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #2196F3;
+}
+
+.btn-outline-light.usecase-cta-btn:hover {
+    background-color: transparent;
+    color: white;
+    transform: none;
 }
 
 /* Responsive Design for Use Cases */
