@@ -336,7 +336,7 @@ function submitWorkWithUsForm(event) {
     };
 
     // Send email using EmailJS with job application template
-    emailjs.send('service_abc123', 'template_job_application', templateParams) // New job application template
+    emailjs.send('service_abc123', 'template_tuu2v8y', templateParams) // Job Application Template
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             showMessage('Thank you for your application! We have received your CV and will review it carefully. We will get back to you within 3-5 business days.', 'success');
