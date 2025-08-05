@@ -100,8 +100,8 @@ function validateSkills(skills) {
 }
 
 function validateCoverLetter(coverLetter) {
-    // Only alphanumeric characters and spaces
-    const coverLetterRegex = /^[a-zA-Z0-9\s]+$/;
+    // Allow alphanumeric characters, spaces, and special characters: . - ; @ : ? ! ,
+    const coverLetterRegex = /^[a-zA-Z0-9\s.\-;@:?!,]+$/;
     return coverLetterRegex.test(coverLetter) && coverLetter.length <= 350;
 }
 
@@ -275,9 +275,9 @@ function validateWorkWithUsForm() {
         highlightErrorField('skills', false);
     }
 
-    // Validate cover letter (alphanumeric only)
+    // Validate cover letter (alphanumeric and special characters)
     if (coverLetter && !validateCoverLetter(coverLetter)) {
-        showFieldError('coverLetter', 'Cover letter can only contain letters, numbers, and spaces');
+        showFieldError('coverLetter', 'Cover letter can only contain letters, numbers, spaces, and special characters: . - ; @ : ? ! ,');
         highlightErrorField('coverLetter', true);
         isValid = false;
     } else if (coverLetter && coverLetter.length > 350) {
@@ -288,11 +288,8 @@ function validateWorkWithUsForm() {
         highlightErrorField('coverLetter', false);
     }
 
-    // Validate CV file
-    if (!cvFile) {
-        showFieldError('cv', 'Please upload your CV/Resume');
-        isValid = false;
-    } else {
+    // Validate CV file (now optional)
+    if (cvFile) {
         const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
         const maxSize = 5 * 1024 * 1024; // 5MB
 
