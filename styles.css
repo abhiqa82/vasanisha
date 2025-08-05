@@ -530,7 +530,24 @@ p {
 .form-error {
     color: #d32f2f;
     font-size: 0.875rem;
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+/* Error field highlighting */
+.form-input.error,
+.form-textarea.error,
+select.error {
+    border-color: #d32f2f !important;
+    box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.2) !important;
+}
+
+/* Focus states for error fields */
+.form-input.error:focus,
+.form-textarea.error:focus,
+select.error:focus {
+    border-color: #d32f2f !important;
+    box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.2) !important;
 }
 
 .captcha-container {

@@ -76,8 +76,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Form Validation Functions
 function validateEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // RFC 5322 compliant email validation
+    const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
     return emailRegex.test(email);
+}
+
+function validateName(name) {
+    // Only letters, spaces, hyphens, and apostrophes allowed
+    const nameRegex = /^[a-zA-Z\s\-']+$/;
+    return nameRegex.test(name) && name.trim().length >= 2;
 }
 
 function validateDescription(description) {
@@ -86,8 +93,34 @@ function validateDescription(description) {
     return allowedChars.test(description) && description.length <= 200;
 }
 
+function validateSkills(skills) {
+    // Only alphanumeric characters, spaces, and common punctuation
+    const skillsRegex = /^[a-zA-Z0-9\s.,\-()]+$/;
+    return skillsRegex.test(skills) && skills.trim().length <= 100;
+}
+
+function validateCoverLetter(coverLetter) {
+    // Only alphanumeric characters and spaces
+    const coverLetterRegex = /^[a-zA-Z0-9\s]+$/;
+    return coverLetterRegex.test(coverLetter) && coverLetter.length <= 350;
+}
+
 function validateCaptcha(userInput, correctCaptcha) {
     return userInput.toUpperCase() === correctCaptcha.toUpperCase();
+}
+
+// Function to highlight error fields
+function highlightErrorField(fieldId, hasError) {
+    const field = document.getElementById(fieldId);
+    if (field) {
+        if (hasError) {
+            field.style.borderColor = '#d32f2f';
+            field.style.boxShadow = '0 0 0 2px rgba(211, 47, 47, 0.2)';
+        } else {
+            field.style.borderColor = '';
+            field.style.boxShadow = '';
+        }
+    }
 }
 
 // Contact Form Validation
@@ -102,36 +135,51 @@ function validateContactForm() {
     const correctCaptcha = captchaImage.dataset.captcha;
 
     let isValid = true;
-    let errorMessage = '';
 
-    // Clear previous error messages
+    // Clear previous error messages and highlighting
     document.querySelectorAll('.form-error').forEach(error => error.remove());
+    document.querySelectorAll('.form-input, .form-textarea').forEach(field => {
+        field.style.borderColor = '';
+        field.style.boxShadow = '';
+    });
 
     // Validate email
     if (!email) {
         showFieldError('email', 'Email is required');
+        highlightErrorField('email', true);
         isValid = false;
     } else if (!validateEmail(email)) {
         showFieldError('email', 'Please enter a valid email address');
+        highlightErrorField('email', true);
         isValid = false;
+    } else {
+        highlightErrorField('email', false);
     }
 
     // Validate description
     if (!description) {
         showFieldError('description', 'Description is required');
+        highlightErrorField('description', true);
         isValid = false;
     } else if (!validateDescription(description)) {
         showFieldError('description', 'Description can only contain letters, numbers, and special characters: . - ; @ : ? ! , (max 200 characters)');
+        highlightErrorField('description', true);
         isValid = false;
+    } else {
+        highlightErrorField('description', false);
     }
 
     // Validate CAPTCHA
     if (!captchaInput) {
         showFieldError('captcha', 'Please enter the CAPTCHA');
+        highlightErrorField('captcha', true);
         isValid = false;
     } else if (!validateCaptcha(captchaInput, correctCaptcha)) {
         showFieldError('captcha', 'CAPTCHA is incorrect');
+        highlightErrorField('captcha', true);
         isValid = false;
+    } else {
+        highlightErrorField('captcha', false);
     }
 
     return isValid;
@@ -163,52 +211,81 @@ function validateWorkWithUsForm() {
 
     let isValid = true;
 
-    // Clear previous error messages
+    // Clear previous error messages and highlighting
     document.querySelectorAll('.form-error').forEach(error => error.remove());
+    document.querySelectorAll('.form-input, .form-textarea, select').forEach(field => {
+        field.style.borderColor = '';
+        field.style.boxShadow = '';
+    });
 
-    // Validate name
+    // Validate name (characters only)
     if (!name.trim()) {
         showFieldError('name', 'Name is required');
+        highlightErrorField('name', true);
         isValid = false;
-    } else if (name.trim().length < 2) {
-        showFieldError('name', 'Name must be at least 2 characters long');
+    } else if (!validateName(name)) {
+        showFieldError('name', 'Name can only contain letters, spaces, hyphens, and apostrophes');
+        highlightErrorField('name', true);
         isValid = false;
+    } else {
+        highlightErrorField('name', false);
     }
 
-    // Validate email
+    // Validate email (global standards)
     if (!email) {
         showFieldError('workEmail', 'Email is required');
+        highlightErrorField('workEmail', true);
         isValid = false;
     } else if (!validateEmail(email)) {
         showFieldError('workEmail', 'Please enter a valid email address');
+        highlightErrorField('workEmail', true);
         isValid = false;
+    } else {
+        highlightErrorField('workEmail', false);
     }
 
     // Validate position (now mandatory)
     if (!position) {
         showFieldError('position', 'Please select a position of interest');
+        highlightErrorField('position', true);
         isValid = false;
+    } else {
+        highlightErrorField('position', false);
     }
 
     // Validate experience (now mandatory)
     if (!experience) {
         showFieldError('experience', 'Please select your years of experience');
+        highlightErrorField('experience', true);
         isValid = false;
+    } else {
+        highlightErrorField('experience', false);
     }
 
-    // Validate skills (now mandatory)
+    // Validate skills (alphanumeric, max 100 chars)
     if (!skills.trim()) {
         showFieldError('skills', 'Key skills are required');
+        highlightErrorField('skills', true);
         isValid = false;
-    } else if (!validateDescription(skills)) {
-        showFieldError('skills', 'Skills can only contain letters, numbers, and special characters: . - ; @ : ? ! , (max 200 characters)');
+    } else if (!validateSkills(skills)) {
+        showFieldError('skills', 'Skills can only contain letters, numbers, spaces, commas, hyphens, and parentheses (max 100 characters)');
+        highlightErrorField('skills', true);
         isValid = false;
+    } else {
+        highlightErrorField('skills', false);
     }
 
-    // Validate cover letter (optional but with character limit)
-    if (coverLetter && coverLetter.length > 350) {
-        showFieldError('coverLetter', 'Cover letter must be 350 characters or less');
+    // Validate cover letter (alphanumeric only)
+    if (coverLetter && !validateCoverLetter(coverLetter)) {
+        showFieldError('coverLetter', 'Cover letter can only contain letters, numbers, and spaces');
+        highlightErrorField('coverLetter', true);
         isValid = false;
+    } else if (coverLetter && coverLetter.length > 350) {
+        showFieldError('coverLetter', 'Cover letter must be 350 characters or less');
+        highlightErrorField('coverLetter', true);
+        isValid = false;
+    } else {
+        highlightErrorField('coverLetter', false);
     }
 
     // Validate CV file
@@ -237,10 +314,14 @@ function validateWorkWithUsForm() {
     // Validate CAPTCHA
     if (!captchaInput) {
         showFieldError('workCaptcha', 'Please enter the CAPTCHA');
+        highlightErrorField('workCaptcha', true);
         isValid = false;
     } else if (!validateCaptcha(captchaInput, correctCaptcha)) {
         showFieldError('workCaptcha', 'CAPTCHA is incorrect. Please try again.');
+        highlightErrorField('workCaptcha', true);
         isValid = false;
+    } else {
+        highlightErrorField('workCaptcha', false);
     }
 
     return isValid;
@@ -481,6 +562,22 @@ document.addEventListener('DOMContentLoaded', () => {
             if (charCount) {
                 charCount.textContent = `${remaining} characters remaining`;
                 charCount.style.color = remaining < 50 ? '#d32f2f' : 'var(--text-secondary)';
+            }
+        });
+    }
+
+    // Real-time validation for skills field
+    const skillsField = document.getElementById('skills');
+    if (skillsField) {
+        skillsField.addEventListener('input', function() {
+            const value = this.value;
+            const remaining = 100 - value.length;
+            
+            // Update character count if element exists
+            const charCount = document.getElementById('skillsCount');
+            if (charCount) {
+                charCount.textContent = `${remaining} characters remaining`;
+                charCount.style.color = remaining < 20 ? '#d32f2f' : 'var(--text-secondary)';
             }
         });
     }
