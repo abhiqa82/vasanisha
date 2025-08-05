@@ -166,6 +166,9 @@ function validateWorkWithUsForm() {
     if (!name.trim()) {
         showFieldError('name', 'Name is required');
         isValid = false;
+    } else if (name.trim().length < 2) {
+        showFieldError('name', 'Name must be at least 2 characters long');
+        isValid = false;
     }
 
     // Validate email
@@ -179,18 +182,24 @@ function validateWorkWithUsForm() {
 
     // Validate CV file
     if (!cvFile) {
-        showFieldError('cv', 'Please upload your CV');
+        showFieldError('cv', 'Please upload your CV/Resume');
         isValid = false;
     } else {
         const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
         const maxSize = 5 * 1024 * 1024; // 5MB
 
         if (!allowedTypes.includes(cvFile.type)) {
-            showFieldError('cv', 'Please upload a PDF or Word document');
+            showFieldError('cv', 'Please upload a PDF or Word document (.pdf, .doc, .docx)');
             isValid = false;
         } else if (cvFile.size > maxSize) {
             showFieldError('cv', 'File size must be less than 5MB');
             isValid = false;
+        } else {
+            // Show success message for valid file
+            const fileLabel = document.querySelector('.file-upload-label');
+            if (fileLabel) {
+                fileLabel.style.color = 'var(--primary-color)';
+            }
         }
     }
 
@@ -199,7 +208,7 @@ function validateWorkWithUsForm() {
         showFieldError('workCaptcha', 'Please enter the CAPTCHA');
         isValid = false;
     } else if (!validateCaptcha(captchaInput, correctCaptcha)) {
-        showFieldError('workCaptcha', 'CAPTCHA is incorrect');
+        showFieldError('workCaptcha', 'CAPTCHA is incorrect. Please try again.');
         isValid = false;
     }
 
@@ -285,7 +294,7 @@ function submitWorkWithUsForm(event) {
 
     const submitBtn = document.querySelector('#workWithUsForm .btn-primary');
     const originalText = submitBtn.textContent;
-    submitBtn.innerHTML = '<span class="loading"></span> Submitting...';
+    submitBtn.innerHTML = '<span class="loading"></span> Submitting Application...';
     submitBtn.disabled = true;
 
     // Get form data
@@ -303,6 +312,11 @@ function submitWorkWithUsForm(event) {
         hour12: true
     });
     
+    // Get CV file information
+    const cvFile = document.getElementById('cv').files[0];
+    const cvFileName = cvFile ? cvFile.name : 'No file uploaded';
+    const cvFileSize = cvFile ? `${(cvFile.size / 1024 / 1024).toFixed(2)} MB` : 'N/A';
+    
     // Prepare email template parameters for job application
     const templateParams = {
         to_email: 'abhishek.agawane@gmail.com',
@@ -313,23 +327,33 @@ function submitWorkWithUsForm(event) {
         experience: formData.get('experience') || 'Not specified',
         skills: formData.get('skills') || 'Not provided',
         cover_letter: formData.get('coverLetter') || 'Not provided',
-        subject: `Job Application - ${formData.get('name')} | ${formData.get('position') || 'General'} | ${timestamp}`,
+        cv_file_name: cvFileName,
+        cv_file_size: cvFileSize,
+        timestamp: timestamp,
+        subject: `Job Application - ${formData.get('name')} | ${formData.get('position') || 'General Position'} | ${timestamp}`,
         reply_to: formData.get('email'),
-        custom_subject: `Job Application - ${formData.get('name')} | ${formData.get('position') || 'General'} | ${timestamp}`
+        custom_subject: `Job Application - ${formData.get('name')} | ${formData.get('position') || 'General Position'} | ${timestamp}`
     };
 
-    // Send email using EmailJS
-    emailjs.send('service_abc123', 'template_contact123', templateParams) // Job application template (using same template for now)
+    // Send email using EmailJS with job application template
+    emailjs.send('service_abc123', 'template_job_application', templateParams) // New job application template
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
-            showMessage('Thank you for your application! We will review your CV and get back to you soon.', 'success');
+            showMessage('Thank you for your application! We have received your CV and will review it carefully. We will get back to you within 3-5 business days.', 'success');
             document.getElementById('workWithUsForm').reset();
             displayCaptcha();
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
+            
+            // Reset file upload label
+            const fileLabel = document.querySelector('.file-upload-label');
+            if (fileLabel) {
+                fileLabel.innerHTML = '<i class="material-icons">upload_file</i>Choose CV file (PDF, DOC, DOCX)';
+                fileLabel.style.color = 'var(--text-secondary)';
+            }
         }, function(error) {
             console.log('FAILED...', error);
-            showMessage('Sorry, there was an error submitting your application. Please try again or contact us directly.', 'error');
+            showMessage('Sorry, there was an error submitting your application. Please try again or contact us directly at abhishek.agawane@gmail.com', 'error');
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
         });
