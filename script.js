@@ -152,6 +152,10 @@ function validateWorkWithUsForm() {
 
     const email = document.getElementById('workEmail').value;
     const name = document.getElementById('name').value;
+    const position = document.getElementById('position').value;
+    const experience = document.getElementById('experience').value;
+    const skills = document.getElementById('skills').value;
+    const coverLetter = document.getElementById('coverLetter').value;
     const cvFile = document.getElementById('cv').files[0];
     const captchaInput = document.getElementById('workCaptcha').value;
     const captchaImage = document.querySelector('.captcha-image');
@@ -177,6 +181,33 @@ function validateWorkWithUsForm() {
         isValid = false;
     } else if (!validateEmail(email)) {
         showFieldError('workEmail', 'Please enter a valid email address');
+        isValid = false;
+    }
+
+    // Validate position (now mandatory)
+    if (!position) {
+        showFieldError('position', 'Please select a position of interest');
+        isValid = false;
+    }
+
+    // Validate experience (now mandatory)
+    if (!experience) {
+        showFieldError('experience', 'Please select your years of experience');
+        isValid = false;
+    }
+
+    // Validate skills (now mandatory)
+    if (!skills.trim()) {
+        showFieldError('skills', 'Key skills are required');
+        isValid = false;
+    } else if (!validateDescription(skills)) {
+        showFieldError('skills', 'Skills can only contain letters, numbers, and special characters: . - ; @ : ? ! , (max 200 characters)');
+        isValid = false;
+    }
+
+    // Validate cover letter (optional but with character limit)
+    if (coverLetter && coverLetter.length > 350) {
+        showFieldError('coverLetter', 'Cover letter must be 350 characters or less');
         isValid = false;
     }
 
@@ -351,6 +382,17 @@ function submitWorkWithUsForm(event) {
                 fileLabel.innerHTML = '<i class="material-icons">upload_file</i>Choose CV file (PDF, DOC, DOCX)';
                 fileLabel.style.color = 'var(--text-secondary)';
             }
+            
+            // Scroll to thank you message
+            setTimeout(() => {
+                const messageElement = document.querySelector('.message.success');
+                if (messageElement) {
+                    messageElement.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'center' 
+                    });
+                }
+            }, 100);
         }, function(error) {
             console.log('FAILED...', error);
             showMessage('Sorry, there was an error submitting your application. Please try again or contact us directly at abhishek.agawane@gmail.com', 'error');
@@ -423,6 +465,22 @@ document.addEventListener('DOMContentLoaded', () => {
             if (charCount) {
                 charCount.textContent = `${remaining} characters remaining`;
                 charCount.style.color = remaining < 20 ? '#d32f2f' : 'var(--text-secondary)';
+            }
+        });
+    }
+
+    // Real-time validation for cover letter field
+    const coverLetterField = document.getElementById('coverLetter');
+    if (coverLetterField) {
+        coverLetterField.addEventListener('input', function() {
+            const value = this.value;
+            const remaining = 350 - value.length;
+            
+            // Update character count if element exists
+            const charCount = document.getElementById('coverLetterCount');
+            if (charCount) {
+                charCount.textContent = `${remaining} characters remaining`;
+                charCount.style.color = remaining < 50 ? '#d32f2f' : 'var(--text-secondary)';
             }
         });
     }
