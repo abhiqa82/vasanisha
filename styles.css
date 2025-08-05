@@ -90,25 +90,15 @@ p {
     transform: translateY(-2px);
 }
 
-/* "Our Services" button styling in hero section */
+/* Remove effects from "Our Services" button in hero section */
 .hero .btn-secondary {
+    transition: none;
+}
+.hero .btn-secondary:hover {
     background-color: transparent;
     color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    transition: all 0.3s ease;
-    font-weight: 500;
-    padding: 12px 30px;
-    border-radius: 6px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
-}
-
-.hero .btn-secondary:hover {
-    background-color: var(--primary-color);
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+    transform: none;
+    box-shadow: none;
 }
 
 /* Navigation */
