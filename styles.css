@@ -1004,15 +1004,16 @@ select.error:focus {
 /* Adjust spacing for section headers */
 .section-header {
     margin-bottom: 3rem;
+    margin-top: 2rem; /* Add spacing above header text */
 }
 
 .section-header h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem; /* Reduce spacing between header and description text */
 }
 
 .usecase-hero h1 {
     font-size: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem; /* Reduce spacing between header and description text */
     color: white;
 }
 
