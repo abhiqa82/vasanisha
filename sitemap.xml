@@ -6,7 +6,7 @@
     
     <!-- Homepage -->
     <url>
-        <loc>https://vasanisha.blogspot.com/</loc>
+        <loc>https://www.vasanisha.com/</loc>
         <lastmod>2024-12-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -14,7 +14,7 @@
     
     <!-- Contact Page -->
     <url>
-        <loc>https://vasanisha.blogspot.com/contact</loc>
+        <loc>https://www.vasanisha.com/contact.html</loc>
         <lastmod>2024-12-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -22,15 +22,31 @@
     
     <!-- Work With Us Page -->
     <url>
-        <loc>https://vasanisha.blogspot.com/work-with-us</loc>
+        <loc>https://www.vasanisha.com/work-with-us.html</loc>
         <lastmod>2024-12-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
+    <!-- Use Cases Page -->
+    <url>
+        <loc>https://www.vasanisha.com/usecases.html</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- H1B Visa Page -->
+    <url>
+        <loc>https://www.vasanisha.com/h1b-visa.html</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
     <!-- Services Section (Anchor) -->
     <url>
-        <loc>https://vasanisha.blogspot.com/#services</loc>
+        <loc>https://www.vasanisha.com/#services</loc>
         <lastmod>2024-12-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
@@ -38,7 +54,7 @@
     
     <!-- About Section (Anchor) -->
     <url>
-        <loc>https://vasanisha.blogspot.com/#about</loc>
+        <loc>https://www.vasanisha.com/#about</loc>
         <lastmod>2024-12-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
@@ -46,7 +62,7 @@
     
     <!-- Blog/External Links -->
     <url>
-        <loc>https://vasanisha.blogspot.com/blog</loc>
+        <loc>https://vasanisha.blogspot.com/</loc>
         <lastmod>2024-12-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
