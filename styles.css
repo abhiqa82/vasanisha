@@ -1415,49 +1415,7 @@ select.error:focus {
     }
 }
 
-/* H1B Visa Page Styles */
-.h1b-hero {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    color: white;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.h1b-hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    line-height: 1.2;
-}
-
-.h1b-hero p {
-    font-size: 1.2em;
-    opacity: 0.9;
-}
-
-.breadcrumb-section {
-    background: #f8f9fa;
-    padding: 15px 0;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.breadcrumb {
-    font-size: 0.9em;
-}
-
-.breadcrumb a {
-    color: #667eea;
-    text-decoration: none;
-}
-
-.breadcrumb a:hover {
-    text-decoration: underline;
-}
-
-.h1b-content {
-    padding: 40px 0;
-}
-
+/* H1B Visa Page Specific Styles */
 .last-updated {
     background: #e3f2fd;
     padding: 15px;
@@ -1521,31 +1479,6 @@ select.error:focus {
     margin: 25px 0 15px 0;
 }
 
-.key-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin: 30px 0;
-}
-
-.key-stat-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.key-stat-card h4 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.key-stat-card p {
-    font-size: 1em;
-}
-
 .alert-box {
     background: #f8d7da;
     border-left: 5px solid #dc3545;
@@ -1576,46 +1509,6 @@ select.error:focus {
     padding: 20px;
     margin: 20px 0;
     border-radius: 5px;
-}
-
-.skill-category {
-    margin: 30px 0;
-    padding: 25px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    border-left: 5px solid #667eea;
-}
-
-.skill-category h4 {
-    color: #1e3c72;
-    margin-bottom: 15px;
-    font-size: 1.3em;
-}
-
-.skill-tags {
-    margin-top: 15px;
-}
-
-.skill-tag {
-    display: inline-block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    margin: 8px 5px;
-    font-weight: 500;
-    font-size: 0.95em;
-    box-shadow: 0 3px 10px rgba(102,126,234,0.3);
-    transition: all 0.3s;
-}
-
-.skill-tag:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102,126,234,0.5);
-}
-
-.skill-tag.hot {
-    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
 }
 
 .timeline {
@@ -1721,44 +1614,8 @@ select.error:focus {
     color: #1e3c72;
 }
 
-.faq-section {
-    margin-top: 40px;
-}
-
-.faq-item {
-    background: #f8f9fa;
-    padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border-left: 4px solid #667eea;
-}
-
-.faq-question {
-    font-size: 1.2em;
-    font-weight: 600;
-    color: #1e3c72;
-    margin-bottom: 10px;
-}
-
-.faq-answer {
-    color: #555;
-    line-height: 1.8;
-}
-
 /* H1B Visa Responsive Styles */
 @media (max-width: 768px) {
-    .h1b-hero h1 {
-        font-size: 1.8em;
-    }
-    
-    .h1b-content {
-        padding: 20px 0;
-    }
-    
-    .breadcrumb-section {
-        padding: 15px 0;
-    }
-    
     .timeline-item {
         flex-direction: column;
     }
@@ -1775,14 +1632,5 @@ select.error:focus {
     .bar-chart {
         height: 200px;
         gap: 10px;
-    }
-    
-    .key-stats {
-        grid-template-columns: 1fr;
-    }
-    
-    .skill-tag {
-        font-size: 0.85em;
-        padding: 8px 15px;
     }
 } 
