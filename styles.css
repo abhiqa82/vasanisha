@@ -192,6 +192,22 @@ p {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;\n    background-repeat: no-repeat;
+}
+
+/* Homepage Hero Background Image */
+#home.hero {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('images/banners/homepage-banner.jpg');
+}
+
+/* H1B Visa Hero Background Image */
+.h1b-visa-hero {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('images/banners/h1b-visa-banner.png') !important;
 }
 
 .hero-content {
@@ -202,6 +218,8 @@ p {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-title {
@@ -214,7 +232,7 @@ p {
 .hero-subtitle {
     font-size: 1.25rem;
     margin-bottom: 2rem;
-    color: #000000;
+    color: rgba(255, 255, 255, 0.95);
     font-weight: 500;
 }
 
@@ -613,6 +631,16 @@ select.error:focus {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Disable fixed background on mobile for better performance */
+    .hero,
+    .contact-header,
+    .work-header,
+    .usecase-hero,
+    .import-export-hero,
+    .h1b-visa-hero {
+        background-attachment: scroll !important;
+    }
+    
     .hamburger {
         display: flex;
     }
@@ -732,13 +760,23 @@ select.error:focus {
 /* Contact Page Styles */
 .contact-header {
     padding: 120px 0 60px;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('images/banners/contact-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;\n    background-repeat: no-repeat;
     color: white;
     text-align: center;
+    position: relative;
 }
 
 .contact-header p {
     color: white;
+}
+
+.contact-header .container {
+    position: relative;
+    z-index: 1;
 }
 
 .contact-header h1 {
@@ -827,13 +865,23 @@ select.error:focus {
 /* Work With Us Page Styles */
 .work-header {
     padding: 120px 0 60px;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('images/banners/work-with-us-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;\n    background-repeat: no-repeat;
     color: white;
     text-align: center;
+    position: relative;
 }
 
 .work-header p {
     color: white;
+}
+
+.work-header .container {
+    position: relative;
+    z-index: 1;
 }
 
 .work-header h1 {
@@ -995,10 +1043,24 @@ select.error:focus {
 
 /* Use Cases Page Styles */
 .usecase-hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('images/banners/usecases-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;\n    background-repeat: no-repeat;
     color: white;
     text-align: center;
     padding: 140px 0 100px;
+    position: relative;
+}
+
+/* Import Export Hero Background Image */
+.import-export-hero {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('images/banners/import-export-banner.png') !important;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;\n    background-repeat: no-repeat;
 }
 
 /* Adjust spacing for section headers */
