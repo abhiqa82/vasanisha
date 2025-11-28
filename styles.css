@@ -103,10 +103,10 @@ p {
     display: inline-block;
 }
 .hero .btn-secondary:hover {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.1);
     color: white;
-    transform: none;
-    box-shadow: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     border-color: rgba(255, 255, 255, 1);
 }
 
@@ -196,7 +196,8 @@ p {
     position: relative;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;\n    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 /* Homepage Hero Background Image */
@@ -280,6 +281,12 @@ p {
     bottom: 0;
     left: 50%;
     animation: float 3s ease-in-out infinite 2s;
+}
+
+.floating-card:nth-child(4) {
+    top: 25%;
+    right: 25%;
+    animation: float 3s ease-in-out infinite 1.5s;
 }
 
 .floating-card i {
@@ -765,7 +772,8 @@ select.error:focus {
                 url('images/banners/contact-banner.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;\n    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
     position: relative;
@@ -870,7 +878,8 @@ select.error:focus {
                 url('images/banners/work-with-us-banner.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;\n    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
     position: relative;
@@ -1048,7 +1057,8 @@ select.error:focus {
                 url('images/banners/usecases-banner.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;\n    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
     padding: 140px 0 100px;
@@ -1061,7 +1071,8 @@ select.error:focus {
                 url('images/banners/import-export-banner.png') !important;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;\n    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 /* Adjust spacing for section headers */

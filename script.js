@@ -615,4 +615,10 @@ document.addEventListener('DOMContentLoaded', () => {
             this.value = sanitizeInput(this.value);
         });
     });
+    
+    // Update copyright year dynamically
+    const currentYearElement = document.getElementById('current-year');
+    if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+    }
 }); 
