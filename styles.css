@@ -1707,4 +1707,194 @@ select.error:focus {
         height: 200px;
         gap: 10px;
     }
+}
+
+/* Import Export Process Section - Compact Design */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.process-step {
+    background: var(--background-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    padding: 18px;
+    transition: var(--transition);
+    border-left: 3px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.process-step:hover {
+    box-shadow: var(--shadow-medium);
+    transform: translateY(-2px);
+}
+
+.process-step-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--background-light);
+}
+
+.process-number {
+    background: var(--primary-color);
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.process-step-header h3 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.process-step-header h3 i {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.process-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.process-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.process-activities,
+.process-documents {
+    background: var(--background-light);
+    padding: 10px 12px;
+    border-radius: 6px;
+    border-left: 2px solid var(--primary-light);
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.process-activities strong,
+.process-documents strong {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.process-activities,
+.process-documents {
+    color: var(--text-primary);
+}
+
+.process-update {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    padding: 8px 10px;
+    background: #e3f2fd;
+    border-radius: 6px;
+    border-left: 2px solid var(--primary-color);
+    font-size: 0.8rem;
+}
+
+.process-update i {
+    color: var(--primary-color);
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.process-update span {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Process Disclaimer */
+.process-disclaimer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid var(--background-light);
+    text-align: left;
+}
+
+.process-disclaimer p {
+    margin: 0;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.process-disclaimer sup {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-right: 3px;
+}
+
+.process-disclaimer em {
+    font-style: italic;
+}
+
+/* Responsive Design for Process Section */
+@media (max-width: 968px) {
+    .process-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .process-step {
+        padding: 15px;
+    }
+    
+    .process-step-header {
+        gap: 10px;
+    }
+    
+    .process-number {
+        width: 28px;
+        height: 28px;
+        font-size: 0.85rem;
+    }
+    
+    .process-step-header h3 {
+        font-size: 0.95rem;
+    }
+    
+    .process-step-header h3 i {
+        font-size: 1.1rem;
+    }
+    
+    .process-activities,
+    .process-documents {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+    
+    .process-update {
+        font-size: 0.75rem;
+        padding: 6px 8px;
+    }
 } 
