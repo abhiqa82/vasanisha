@@ -402,15 +402,15 @@ function submitContactForm(event) {
     // Prepare email template parameters
     const templateParams = {
         to_email: 'abhishek.agawane@gmail.com',
-        from_name: formData.get('name').trim(),
+        from_name: (formData.get('name') || 'Anonymous').trim(),
         from_email: formData.get('email'),
         phone: formData.get('phone') || 'Not provided',
         service: formData.get('service') || 'Not specified',
         message: formData.get('description'),
         timestamp: timestamp,
-        subject: `Contact Form - ${formData.get('name').trim()} | ${formData.get('service') || 'General'} | ${timestamp}`,
+        subject: `Contact Form - ${(formData.get('name') || 'Anonymous').trim()} | ${formData.get('service') || 'General'} | ${timestamp}`,
         reply_to: formData.get('email'),
-        custom_subject: `Contact Form - ${formData.get('name').trim()} | ${formData.get('service') || 'General'} | ${timestamp}`
+        custom_subject: `Contact Form - ${(formData.get('name') || 'Anonymous').trim()} | ${formData.get('service') || 'General'} | ${timestamp}`
     };
 
     // Send email using EmailJS
