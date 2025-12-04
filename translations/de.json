@@ -1,0 +1,228 @@
+{
+  "_comment": "German (Deutsch) translations for Import-Export page - Vasanisha Website",
+  "_version": "1.0.0",
+  "_lastUpdated": "December 2025",
+  
+  "meta": {
+    "title": "Import Export Geschäft - Vasanisha | Globale Handelslösungen & Handelshändler",
+    "description": "Professionelle Import-Export-Geschäftsdienstleistungen von Vasanisha Handelshändler. Export von Indien nach Europa & Deutschland: Technische Güter, Textilien, Pharmazeutika, Gewürze und landwirtschaftliche Produkte. Globale Handelslösungen, Zollabfertigung, Dokumentation und internationaler Versand für Handelshändler."
+  },
+  
+  "nav": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "about": "Über Uns",
+    "contact": "Kontakt",
+    "workWithUs": "Arbeiten Sie mit uns",
+    "useCases": "Anwendungsfälle",
+    "h1bVisa": "H1B Visum",
+    "importExport": "Import Export"
+  },
+  
+  "hero": {
+    "title": "Globale Import-Export-Geschäftslösungen - Handelshändler",
+    "subtitle": "Verbindung von Unternehmen weltweit durch professionelle Handelshändler-Dienstleistungen, Import-Export-Lösungen, Zollabfertigung und internationale Handelserleichterung",
+    "contactButton": "Kontaktieren Sie uns"
+  },
+  
+  "services": {
+    "sectionTitle": "Unsere Import-Export- und Handelshändler-Dienstleistungen",
+    "sectionSubtitle": "Umfassende globale Handelslösungen von erfahrenen Handelshändlern, um Ihr Geschäft international zu erweitern",
+    
+    "import": {
+      "title": "Import-Dienstleistungen",
+      "description": "Optimierte Importlösungen für Unternehmen, die Produkte von internationalen Märkten beziehen möchten. Wir kümmern uns um Dokumentation, Zollabfertigung und Logistik.",
+      "features": [
+        "Zollabfertigung & Dokumentation",
+        "Importlizenzierung & Compliance",
+        "Produktbeschaffung & Qualitätskontrolle",
+        "Spedition & Logistik",
+        "Zoll- & Steueroptimierung"
+      ]
+    },
+    
+    "export": {
+      "title": "Export-Dienstleistungen",
+      "description": "Professionelle Exportdienstleistungen, um Ihre Produkte auf globale Märkte zu bringen. Wir verwalten Dokumentation, Versand und Compliance-Anforderungen.",
+      "features": [
+        "Exportdokumentation & Lizenzierung",
+        "Internationaler Versand & Logistik",
+        "Export-Compliance & Vorschriften",
+        "Marktforschung & Eintritsstrategie",
+        "Zahlungs- & Finanzlösungen"
+      ]
+    },
+    
+    "documentation": {
+      "title": "Handelsdokumentation",
+      "description": "Vollständige Dokumentationsdienstleistungen für nahtlose internationale Handelstransaktionen. Wir stellen sicher, dass alle Unterlagen korrekt und konform sind.",
+      "features": [
+        "Handelsrechnungen & Packlisten",
+        "Konnossement & Versanddokumente",
+        "Ursprungszeugnisse",
+        "Versicherungs- & Bankdokumente",
+        "Zollerklärungen"
+      ]
+    },
+    
+    "customs": {
+      "title": "Zollabfertigung",
+      "description": "Fachkundige Zollabfertigungsdienstleistungen für einen reibungslosen Warendurchgang an internationalen Grenzen mit minimalen Verzögerungen.",
+      "features": [
+        "Zollmakler-Dienstleistungen",
+        "Zoll- & Steuerberechnung",
+        "HS-Code-Klassifizierung",
+        "Zoll-Compliance & Audits",
+        "Zolllager-Dienstleistungen"
+      ]
+    },
+    
+    "logistics": {
+      "title": "Logistik & Versand",
+      "description": "End-to-End-Logistiklösungen für Luft-, See- und Landfracht. Wir koordinieren mit zuverlässigen Spediteuren weltweit.",
+      "features": [
+        "Luftfrachtdienste",
+        "Seefracht & Containerschifffahrt",
+        "Landtransport",
+        "Lagerung & Verteilung",
+        "Echtzeit-Tracking & Updates"
+      ]
+    },
+    
+    "consulting": {
+      "title": "Handelsberatung",
+      "description": "Strategische Beratungsdienstleistungen, um Unternehmen bei der Navigation durch internationale Handelsvorschriften zu helfen und ihre globalen Operationen zu optimieren.",
+      "features": [
+        "Markteintritsstrategie",
+        "Handels-Compliance-Beratung",
+        "Internationale Geschäftsentwicklung",
+        "Risikobewertung & Minderung",
+        "Handelsfinanzierungslösungen"
+      ]
+    }
+  },
+  
+  "benefits": {
+    "sectionTitle": "Warum unsere Import-Export-Dienstleistungen wählen",
+    "sectionSubtitle": "Partnerschaft mit uns für zuverlässige, effiziente und konforme internationale Handelslösungen",
+    
+    "fastProcessing": {
+      "title": "Schnelle Abwicklung",
+      "description": "Optimierte Prozesse und effiziente Dokumentenbearbeitung zur Minimierung von Verzögerungen und Beschleunigung Ihrer Sendungen."
+    },
+    "compliance": {
+      "title": "Compliance Garantiert",
+      "description": "Volle Compliance mit internationalen Handelsvorschriften, Zollanforderungen und Dokumentationsstandards."
+    },
+    "globalNetwork": {
+      "title": "Globales Netzwerk",
+      "description": "Etablierte Partnerschaften mit zuverlässigen Spediteuren, Zollmaklern und Agenten in wichtigen Handelsländern weltweit."
+    },
+    "costEffective": {
+      "title": "Kosteneffektiv",
+      "description": "Wettbewerbsfähige Preise und optimierte Versandrouten zur Reduzierung Ihrer gesamten Import-Export-Kosten."
+    },
+    "expertSupport": {
+      "title": "Expertensupport",
+      "description": "Engagierte Handelsexperten stehen zur Verfügung, um Sie durch jeden Schritt des Import-Export-Prozesses zu führen."
+    },
+    "tracking": {
+      "title": "Echtzeit-Tracking",
+      "description": "Vollständige Transparenz Ihrer Sendungen mit Echtzeit-Tracking und regelmäßigen Statusaktualisierungen."
+    }
+  },
+  
+  "industries": {
+    "sectionTitle": "Branchen, die wir bedienen",
+    "sectionSubtitle": "Stark nachgefragte Güter, die von Indien auf europäische Märkte exportiert werden",
+    
+    "engineering": {
+      "title": "Technische Güter",
+      "description": "Autokomponenten, Maschinenteile, elektrische Ausrüstung und Industriewerkzeuge"
+    },
+    "textiles": {
+      "title": "Textilien & Bekleidung",
+      "description": "Baumwollstoffe, Kleidungsstücke, Heimtextilien, Servietten, Schuhe und Modeaccessoires"
+    },
+    "pharma": {
+      "title": "Pharmazeutika",
+      "description": "Generika, Wirkstoffe, Formulierungen und Gesundheitsprodukte"
+    },
+    "spices": {
+      "title": "Gewürze & Agrarprodukte",
+      "description": "Gewürze, Reis, Tee, Kaffee, Cashewnüsse und Bio-Produkte"
+    }
+  },
+  
+  "process": {
+    "sectionTitle": "Unser Import-Export-Prozess",
+    "sectionSubtitle": "Ein strukturierter, transparenter Arbeitsablauf für nahtlosen internationalen Handel von der Beratung bis zur Lieferung",
+    "step1": {
+      "title": "Erstberatung",
+      "description": "Wir besprechen Ihre Produktanforderungen, führen Marktanalysen durch, überprüfen Qualitätsstandards und erstellen detaillierte Kostenschätzungen. Erforderliche Dokumente umfassen Produktspezifikationen, technische Datenblätter und Geschäftsregistrierung."
+    },
+    "step2": {
+      "title": "Zertifizierung & Compliance",
+      "description": "Wir identifizieren und überprüfen erforderliche Zertifizierungen (ISO, CE, FDA), stellen die Einhaltung gesetzlicher Vorschriften sicher und kümmern uns um Lizenzanforderungen. Dokumente umfassen bestehende Zertifikate, Testberichte und Compliance-Checklisten."
+    },
+    "step3": {
+      "title": "Preisgestaltung & Konditionen",
+      "description": "Verhandlung von Preisen, Zahlungsbedingungen (LC, TT), Versandbedingungen (FOB, CIF, EXW) und Incoterms-Vereinbarung. Wir erstellen Proforma-Rechnung, Preisangebot und finalisieren Verpackungsspezifikationen."
+    },
+    "step4": {
+      "title": "Vertragsabschluss",
+      "description": "Entwurf und Prüfung des Kaufvertrags, Finalisierung der Bedingungen, Einholung von Unterschriften und Bestätigung der Zahlungsvereinbarungen. Wichtige Dokumente umfassen Kaufvertrag, Bestellung (PO) und Akkreditiv."
+    },
+    "step5": {
+      "title": "Beschaffung & Produktion",
+      "description": "Koordination mit Lieferanten, Überwachung des Produktionsfortschritts, Durchführung von Qualitätsinspektionen und Verpackungsorganisation. Regelmäßige Produktionsstatusberichte und Qualitätszertifikate werden bereitgestellt."
+    },
+    "step6": {
+      "title": "Dokumentation & Logistik",
+      "description": "Vorbereitung vollständiger Handelsdokumentation einschließlich Handelsrechnung, Packliste, Ursprungszeugnis und Frachtbrief. Organisation des Versands und Buchung der Fracht bei zuverlässigen Spediteuren."
+    },
+    "step7": {
+      "title": "Zollabfertigung",
+      "description": "Einreichung von Zollerklärungen mit korrekter HS-Code-Klassifizierung, Koordination der Abfertigungsverfahren, Abwicklung von Zoll- und Steuerzahlungen und Bereitstellung von Echtzeit-Tracking während des Transports."
+    },
+    "step8": {
+      "title": "Lieferung & Support",
+      "description": "Bestätigung der erfolgreichen Lieferung, Einholung des Liefernachweises (POD), Bearbeitung eventueller Probleme nach der Lieferung und laufende Unterstützung. Abschluss der Transaktion mit Endrechnung und Zusammenfassung."
+    },
+    "disclaimer": "Bitte beachten Sie, dass die oben aufgeführten Prozesse nicht obligatorisch sind. Sie können je nach individuellen Umständen von Fall zu Fall variieren."
+  },
+  
+  "cta": {
+    "title": "Bereit, Ihr Geschäft global zu erweitern?",
+    "subtitle": "Lassen Sie uns Ihre Import-Export-Anforderungen besprechen und eine maßgeschneiderte Handelslösung für Ihr Unternehmen erstellen.",
+    "button": "Beginnen Sie mit Import Export"
+  },
+  
+  "footer": {
+    "company": {
+      "name": "Vasanisha",
+      "tagline": "Professionelle App-Entwicklung, digitale Transformation und Import-Export-Geschäftsdienstleistungen für kleine Unternehmen. Mumbai, INDIEN."
+    },
+    "servicesTitle": "Dienstleistungen",
+    "servicesItems": {
+      "appDev": "App-Entwicklung",
+      "webDev": "Website-Entwicklung",
+      "digital": "Digitale Transformation",
+      "gbp": "Google Business-Profil",
+      "importExport": "Import Export"
+    },
+    "quickLinksTitle": "Schnelllinks",
+    "quickLinksItems": {
+      "contact": "Kontakt",
+      "work": "Arbeiten Sie mit uns",
+      "useCases": "Anwendungsfälle",
+      "h1b": "H1B Visum",
+      "importExport": "Import Export",
+      "blog": "Blog",
+      "sitemap": "Sitemap"
+    },
+    "connectTitle": "Verbinden",
+    "copyright": "Alle Rechte vorbehalten."
+  }
+}
+

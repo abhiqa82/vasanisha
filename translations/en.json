@@ -1,0 +1,228 @@
+{
+  "_comment": "English translations for Import-Export page - Vasanisha Website",
+  "_version": "1.0.0",
+  "_lastUpdated": "December 2025",
+  
+  "meta": {
+    "title": "Import Export Business - Vasanisha | Global Trade Solutions & Merchant Trader",
+    "description": "Professional import export business services by Vasanisha merchant trader. Export from India to Europe & Germany: Engineering goods, textiles, pharmaceuticals, spices, and agricultural products. Global trade solutions, customs clearance, documentation, and international shipping for merchant traders."
+  },
+  
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "workWithUs": "Work With Us",
+    "useCases": "Use Cases",
+    "h1bVisa": "H1B Visa",
+    "importExport": "Import Export"
+  },
+  
+  "hero": {
+    "title": "Global Import Export Business Solutions - Merchant Trader",
+    "subtitle": "Connecting businesses worldwide through professional merchant trader services, import export solutions, customs clearance, and international trade facilitation",
+    "contactButton": "Contact Us"
+  },
+  
+  "services": {
+    "sectionTitle": "Our Import Export & Merchant Trader Services",
+    "sectionSubtitle": "Comprehensive global trade solutions from experienced merchant traders to help your business expand internationally",
+    
+    "import": {
+      "title": "Import Services",
+      "description": "Streamlined import solutions for businesses looking to source products from international markets. We handle documentation, customs clearance, and logistics.",
+      "features": [
+        "Customs Clearance & Documentation",
+        "Import Licensing & Compliance",
+        "Product Sourcing & Quality Control",
+        "Freight Forwarding & Logistics",
+        "Duty & Tax Optimization"
+      ]
+    },
+    
+    "export": {
+      "title": "Export Services",
+      "description": "Professional export services to help your products reach global markets. We manage documentation, shipping, and compliance requirements.",
+      "features": [
+        "Export Documentation & Licensing",
+        "International Shipping & Logistics",
+        "Export Compliance & Regulations",
+        "Market Research & Entry Strategy",
+        "Payment & Finance Solutions"
+      ]
+    },
+    
+    "documentation": {
+      "title": "Trade Documentation",
+      "description": "Complete documentation services for seamless international trade transactions. We ensure all paperwork is accurate and compliant.",
+      "features": [
+        "Commercial Invoices & Packing Lists",
+        "Bill of Lading & Shipping Documents",
+        "Certificates of Origin",
+        "Insurance & Banking Documents",
+        "Customs Declarations"
+      ]
+    },
+    
+    "customs": {
+      "title": "Customs Clearance",
+      "description": "Expert customs clearance services to ensure smooth passage of goods through international borders with minimal delays.",
+      "features": [
+        "Customs Brokerage Services",
+        "Duty & Tax Calculation",
+        "HS Code Classification",
+        "Customs Compliance & Audits",
+        "Bonded Warehouse Services"
+      ]
+    },
+    
+    "logistics": {
+      "title": "Logistics & Shipping",
+      "description": "End-to-end logistics solutions for air, sea, and land freight. We coordinate with reliable carriers worldwide.",
+      "features": [
+        "Air Freight Services",
+        "Sea Freight & Container Shipping",
+        "Land Transportation",
+        "Warehousing & Distribution",
+        "Real-time Tracking & Updates"
+      ]
+    },
+    
+    "consulting": {
+      "title": "Trade Consulting",
+      "description": "Strategic consulting services to help businesses navigate international trade regulations and optimize their global operations.",
+      "features": [
+        "Market Entry Strategy",
+        "Trade Compliance Consulting",
+        "International Business Development",
+        "Risk Assessment & Mitigation",
+        "Trade Finance Solutions"
+      ]
+    }
+  },
+  
+  "benefits": {
+    "sectionTitle": "Why Choose Our Import Export Services",
+    "sectionSubtitle": "Partner with us for reliable, efficient, and compliant international trade solutions",
+    
+    "fastProcessing": {
+      "title": "Fast Processing",
+      "description": "Streamlined processes and efficient documentation handling to minimize delays and expedite your shipments."
+    },
+    "compliance": {
+      "title": "Compliance Guaranteed",
+      "description": "Full compliance with international trade regulations, customs requirements, and documentation standards."
+    },
+    "globalNetwork": {
+      "title": "Global Network",
+      "description": "Established partnerships with reliable carriers, customs brokers, and agents in major trading countries worldwide."
+    },
+    "costEffective": {
+      "title": "Cost Effective",
+      "description": "Competitive pricing and optimized shipping routes to help reduce your overall import export costs."
+    },
+    "expertSupport": {
+      "title": "Expert Support",
+      "description": "Dedicated trade experts available to guide you through every step of the import export process."
+    },
+    "tracking": {
+      "title": "Real-time Tracking",
+      "description": "Complete visibility of your shipments with real-time tracking and regular status updates."
+    }
+  },
+  
+  "industries": {
+    "sectionTitle": "Industries We Serve",
+    "sectionSubtitle": "High-demand commodities exported from India to European markets",
+    
+    "engineering": {
+      "title": "Engineering Goods",
+      "description": "Auto components, machinery parts, electrical equipment, and industrial tools"
+    },
+    "textiles": {
+      "title": "Textiles & Apparel",
+      "description": "Cotton fabrics, garments, home textiles, Napkins, footwears and fashion accessories"
+    },
+    "pharma": {
+      "title": "Pharmaceuticals",
+      "description": "Generic medicines, APIs, formulations, and healthcare products"
+    },
+    "spices": {
+      "title": "Spices & Agri Products",
+      "description": "Spices, rice, tea, coffee, cashews, and organic products"
+    }
+  },
+  
+  "process": {
+    "sectionTitle": "Our Import Export Process",
+    "sectionSubtitle": "A structured, transparent workflow ensuring seamless international trade from consultation to delivery",
+    "step1": {
+      "title": "Initial Consultation",
+      "description": "We discuss your product requirements, conduct market analysis, review quality standards, and provide detailed cost estimates. Required documents include product specifications, technical datasheets, and business registration."
+    },
+    "step2": {
+      "title": "Certification & Compliance",
+      "description": "We identify and verify required certifications (ISO, CE, FDA), ensure regulatory compliance, and handle licensing requirements. Documents include existing certificates, test reports, and compliance checklists."
+    },
+    "step3": {
+      "title": "Pricing & Terms",
+      "description": "Negotiate pricing, payment terms (LC, TT), shipping terms (FOB, CIF, EXW), and Incoterms agreement. We prepare proforma invoice, price quotation, and finalize packaging specifications."
+    },
+    "step4": {
+      "title": "Contract Finalization",
+      "description": "Draft and review sales contract, finalize terms, obtain signatures, and confirm payment arrangements. Key documents include purchase contract, purchase order (PO), and Letter of Credit."
+    },
+    "step5": {
+      "title": "Procurement & Production",
+      "description": "Coordinate with suppliers, monitor production progress, conduct quality inspections, and arrange proper packaging. Regular production status reports and quality certificates provided."
+    },
+    "step6": {
+      "title": "Documentation & Logistics",
+      "description": "Prepare complete trade documentation including commercial invoice, packing list, certificate of origin, and bill of lading. Arrange shipping and book cargo with reliable carriers."
+    },
+    "step7": {
+      "title": "Customs Clearance",
+      "description": "Submit customs declarations with proper HS code classification, coordinate clearance procedures, handle duty and tax payments, and provide real-time tracking throughout transit."
+    },
+    "step8": {
+      "title": "Delivery & Support",
+      "description": "Confirm successful delivery, obtain proof of delivery (POD), handle any post-delivery issues, and provide ongoing support. Complete transaction with final invoice and summary."
+    },
+    "disclaimer": "Please note that the processes listed above are not mandatory. They can vary from one case to another based on individual circumstances."
+  },
+  
+  "cta": {
+    "title": "Ready to Expand Your Business Globally?",
+    "subtitle": "Let's discuss your import export requirements and create a customized trade solution for your business.",
+    "button": "Get Started with Import Export"
+  },
+  
+  "footer": {
+    "company": {
+      "name": "Vasanisha",
+      "tagline": "Professional app development, digital transformation, and import export business services for small businesses. Mumbai, INDIA."
+    },
+    "servicesTitle": "Services",
+    "servicesItems": {
+      "appDev": "App Development",
+      "webDev": "Website Development",
+      "digital": "Digital Transformation",
+      "gbp": "Google Business Profile",
+      "importExport": "Import Export"
+    },
+    "quickLinksTitle": "Quick Links",
+    "quickLinksItems": {
+      "contact": "Contact Us",
+      "work": "Work With Us",
+      "useCases": "Use Cases",
+      "h1b": "H1B Visa",
+      "importExport": "Import Export",
+      "blog": "Blog",
+      "sitemap": "Sitemap"
+    },
+    "connectTitle": "Connect",
+    "copyright": "All rights reserved."
+  }
+}
+

@@ -1,0 +1,228 @@
+{
+  "_comment": "Dutch (Nederlands) translations for Import-Export page - Vasanisha Website",
+  "_version": "1.0.0",
+  "_lastUpdated": "December 2025",
+  
+  "meta": {
+    "title": "Import Export Bedrijf - Vasanisha | Wereldwijde Handelsoplossingen & Handelshandelaar",
+    "description": "Professionele import-export bedrijfsdiensten door Vasanisha handelshandelaar. Export van India naar Europa & Duitsland: Technische goederen, textiel, farmaceutica, specerijen en landbouwproducten. Wereldwijde handelsoplossingen, douaneafhandeling, documentatie en internationale verzending voor handelshandelaren."
+  },
+  
+  "nav": {
+    "home": "Home",
+    "services": "Diensten",
+    "about": "Over Ons",
+    "contact": "Contact",
+    "workWithUs": "Werk Met Ons",
+    "useCases": "Toepassingen",
+    "h1bVisa": "H1B Visum",
+    "importExport": "Import Export"
+  },
+  
+  "hero": {
+    "title": "Wereldwijde Import-Export Bedrijfsoplossingen - Handelshandelaar",
+    "subtitle": "Bedrijven wereldwijd verbinden door professionele handelshandelaar diensten, import-export oplossingen, douaneafhandeling en internationale handelsfacilitering",
+    "contactButton": "Neem Contact Op"
+  },
+  
+  "services": {
+    "sectionTitle": "Onze Import-Export en Handelshandelaar Diensten",
+    "sectionSubtitle": "Uitgebreide wereldwijde handelsoplossingen van ervaren handelshandelaren om uw bedrijf internationaal uit te breiden",
+    
+    "import": {
+      "title": "Import Diensten",
+      "description": "Gestroomlijnde importoplossingen voor bedrijven die producten uit internationale markten willen betrekken. Wij verzorgen documentatie, douaneafhandeling en logistiek.",
+      "features": [
+        "Douaneafhandeling & Documentatie",
+        "Importlicenties & Compliance",
+        "Productbeschaffing & Kwaliteitscontrole",
+        "Vrachtdoorvoer & Logistiek",
+        "Douane- & Belastingoptimalisatie"
+      ]
+    },
+    
+    "export": {
+      "title": "Export Diensten",
+      "description": "Professionele exportdiensten om uw producten op mondiale markten te brengen. Wij beheren documentatie, verzending en compliance-vereisten.",
+      "features": [
+        "Exportdocumentatie & Licenties",
+        "Internationale Verzending & Logistiek",
+        "Export Compliance & Regelgeving",
+        "Marktonderzoek & Toegangsstrategie",
+        "Betaling & Financieringsoplossingen"
+      ]
+    },
+    
+    "documentation": {
+      "title": "Handelsdocumentatie",
+      "description": "Volledige documentatiediensten voor naadloze internationale handelstransacties. Wij zorgen ervoor dat alle papierwerk nauwkeurig en conform is.",
+      "features": [
+        "Handelsfacturen & Paklijsten",
+        "Vrachtbrief & Verzenddocumenten",
+        "Oorsprongscertificaten",
+        "Verzekerings- & Bankdocumenten",
+        "Douaneaangiften"
+      ]
+    },
+    
+    "customs": {
+      "title": "Douaneafhandeling",
+      "description": "Deskundige douaneafhandelingsdiensten voor een soepele doorgang van goederen over internationale grenzen met minimale vertragingen.",
+      "features": [
+        "Douanemakelarij Diensten",
+        "Douane- & Belastingberekening",
+        "HS-Code Classificatie",
+        "Douane Compliance & Audits",
+        "Diensten voor Douane-entrepot"
+      ]
+    },
+    
+    "logistics": {
+      "title": "Logistiek & Verzending",
+      "description": "End-to-end logistieke oplossingen voor lucht-, zee- en landvracht. Wij coördineren met betrouwbare vervoerders wereldwijd.",
+      "features": [
+        "Luchtvracht Diensten",
+        "Zeevracht & Containerverzending",
+        "Landtransport",
+        "Opslag & Distributie",
+        "Real-time Tracking & Updates"
+      ]
+    },
+    
+    "consulting": {
+      "title": "Handelsadvies",
+      "description": "Strategische adviesdiensten om bedrijven te helpen bij het navigeren door internationale handelsregelgeving en het optimaliseren van hun mondiale operaties.",
+      "features": [
+        "Markttoegangsstrategie",
+        "Handels-Compliance Advies",
+        "Internationale Bedrijfsontwikkeling",
+        "Risicobeoordeling & Beperking",
+        "Handelsfinancieringsoplossingen"
+      ]
+    }
+  },
+  
+  "benefits": {
+    "sectionTitle": "Waarom kiezen voor onze Import-Export Diensten",
+    "sectionSubtitle": "Partner met ons voor betrouwbare, efficiënte en conforme internationale handelsoplossingen",
+    
+    "fastProcessing": {
+      "title": "Snelle Verwerking",
+      "description": "Gestroomlijnde processen en efficiënte documentenverwerking om vertragingen te minimaliseren en uw zendingen te versnellen."
+    },
+    "compliance": {
+      "title": "Compliance Gegarandeerd",
+      "description": "Volledige compliance met internationale handelsvoorschriften, douane-eisen en documentatienormen."
+    },
+    "globalNetwork": {
+      "title": "Wereldwijd Netwerk",
+      "description": "Gevestigde partnerschappen met betrouwbare vervoerders, douanemakelaars en agenten in belangrijke handelslanden wereldwijd."
+    },
+    "costEffective": {
+      "title": "Kosteneffectief",
+      "description": "Concurrerende prijzen en geoptimaliseerde verzendroutes om uw totale import-exportkosten te verlagen."
+    },
+    "expertSupport": {
+      "title": "Deskundige Ondersteuning",
+      "description": "Toegewijde handelsexperts beschikbaar om u door elke stap van het import-exportproces te begeleiden."
+    },
+    "tracking": {
+      "title": "Real-time Tracking",
+      "description": "Volledige zichtbaarheid van uw zendingen met real-time tracking en regelmatige statusupdates."
+    }
+  },
+  
+  "industries": {
+    "sectionTitle": "Industrieën die wij bedienen",
+    "sectionSubtitle": "Sterk gevraagde goederen geëxporteerd van India naar Europese markten",
+    
+    "engineering": {
+      "title": "Technische Goederen",
+      "description": "Auto-onderdelen, machineonderdelen, elektrische apparatuur en industriële gereedschappen"
+    },
+    "textiles": {
+      "title": "Textiel & Kleding",
+      "description": "Katoenen stoffen, kleding, huishoudtextiel, servetten, schoenen en mode-accessoires"
+    },
+    "pharma": {
+      "title": "Farmaceutica",
+      "description": "Generieke geneesmiddelen, API's, formuleringen en gezondheidsproducten"
+    },
+    "spices": {
+      "title": "Specerijen & Landbouwproducten",
+      "description": "Specerijen, rijst, thee, koffie, cashewnoten en biologische producten"
+    }
+  },
+  
+  "process": {
+    "sectionTitle": "Ons Import-Export Proces",
+    "sectionSubtitle": "Een gestructureerde, transparante workflow die naadloze internationale handel garandeert van consultatie tot levering",
+    "step1": {
+      "title": "Eerste Consultatie",
+      "description": "We bespreken uw productvereisten, voeren marktanalyses uit, beoordelen kwaliteitsnormen en verstrekken gedetailleerde kostenramingen. Vereiste documenten omvatten productspecificaties, technische datasheets en bedrijfsregistratie."
+    },
+    "step2": {
+      "title": "Certificering & Compliance",
+      "description": "We identificeren en verifiëren vereiste certificeringen (ISO, CE, FDA), zorgen voor naleving van regelgeving en behandelen licentievereisten. Documenten omvatten bestaande certificaten, testrapporten en compliance-checklists."
+    },
+    "step3": {
+      "title": "Prijsstelling & Voorwaarden",
+      "description": "Onderhandeling over prijzen, betalingsvoorwaarden (LC, TT), verzendvoorwaarden (FOB, CIF, EXW) en Incoterms-overeenkomst. We bereiden proforma factuur, prijsopgave voor en finaliseren verpakkingsspecificaties."
+    },
+    "step4": {
+      "title": "Contract Afronding",
+      "description": "Opstellen en beoordelen van verkoopcontract, finaliseren van voorwaarden, verkrijgen van handtekeningen en bevestigen van betalingsregelingen. Belangrijke documenten omvatten koopcontract, inkooporder (PO) en kredietbrief."
+    },
+    "step5": {
+      "title": "Inkoop & Productie",
+      "description": "Coördineren met leveranciers, productieproces monitoren, kwaliteitsinspecties uitvoeren en juiste verpakking regelen. Regelmatige productiestatusrapporten en kwaliteitscertificaten worden verstrekt."
+    },
+    "step6": {
+      "title": "Documentatie & Logistiek",
+      "description": "Volledige handelsdocumentatie voorbereiden inclusief handelsfactuur, paklijst, oorsprongscertificaat en vrachtbrief. Verzending regelen en vracht boeken bij betrouwbare vervoerders."
+    },
+    "step7": {
+      "title": "Douaneafhandeling",
+      "description": "Douaneaangiften indienen met juiste HS-codeclassificatie, afhandelingsprocedures coördineren, douane- en belastingbetalingen afhandelen en real-time tracking bieden tijdens transit."
+    },
+    "step8": {
+      "title": "Levering & Ondersteuning",
+      "description": "Succesvolle levering bevestigen, bewijs van levering (POD) verkrijgen, eventuele problemen na levering afhandelen en doorlopende ondersteuning bieden. Transactie afronden met eindfactuur en samenvatting."
+    },
+    "disclaimer": "Houd er rekening mee dat de hierboven vermelde processen niet verplicht zijn. Ze kunnen per geval variëren op basis van individuele omstandigheden."
+  },
+  
+  "cta": {
+    "title": "Klaar om uw bedrijf wereldwijd uit te breiden?",
+    "subtitle": "Laten we uw import-exportvereisten bespreken en een op maat gemaakte handelsoplossing voor uw bedrijf creëren.",
+    "button": "Begin met Import Export"
+  },
+  
+  "footer": {
+    "company": {
+      "name": "Vasanisha",
+      "tagline": "Professionele app-ontwikkeling, digitale transformatie en import-export bedrijfsdiensten voor kleine bedrijven. Mumbai, INDIA."
+    },
+    "servicesTitle": "Diensten",
+    "servicesItems": {
+      "appDev": "App-ontwikkeling",
+      "webDev": "Website-ontwikkeling",
+      "digital": "Digitale Transformatie",
+      "gbp": "Google Bedrijfsprofiel",
+      "importExport": "Import Export"
+    },
+    "quickLinksTitle": "Snelle Links",
+    "quickLinksItems": {
+      "contact": "Contact",
+      "work": "Werk Met Ons",
+      "useCases": "Toepassingen",
+      "h1b": "H1B Visum",
+      "importExport": "Import Export",
+      "blog": "Blog",
+      "sitemap": "Sitemap"
+    },
+    "connectTitle": "Verbinden",
+    "copyright": "Alle rechten voorbehouden."
+  }
+}
+

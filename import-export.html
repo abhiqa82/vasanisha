@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Import Export Business - Vasanisha | Global Trade Solutions & Merchant Trader</title>
+    <!-- Page title (translatable via i18n) -->
+    <title data-i18n-title="meta.title">Import Export Business - Vasanisha | Global Trade Solutions & Merchant Trader</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -21,8 +22,8 @@
       gtag('config', 'G-HWJV4D5R9T');
     </script>
     
-    <!-- Primary SEO Meta Tags -->
-    <meta name="description" content="Professional import export business services by Vasanisha merchant trader. Export from India to Europe & Germany: Engineering goods, textiles, pharmaceuticals, spices, and agricultural products. Global trade solutions, customs clearance, documentation, and international shipping for merchant traders.">
+    <!-- Primary SEO Meta Tags (translatable via i18n) -->
+    <meta name="description" data-i18n-meta="meta.description" content="Professional import export business services by Vasanisha merchant trader. Export from India to Europe & Germany: Engineering goods, textiles, pharmaceuticals, spices, and agricultural products. Global trade solutions, customs clearance, documentation, and international shipping for merchant traders.">
     <meta name="keywords" content="merchant trader, import export business, merchant trader services, India export to Europe, India export to Germany, engineering goods export, textiles export India, pharmaceuticals export, spices export, agricultural products export, international trade, global trade solutions, import export services, customs clearance, international shipping, trade documentation, export import company, import export consultant, merchant trading, cross border trade, international merchant, international logistics, trade facilitation, India Europe trade, India Germany trade">
     <meta name="author" content="Vasanisha">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -67,6 +68,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     
+    <!-- Multi-language Support System -->
+    <script src="assets/js/i18n.js"></script>
+    
     <!-- Structured Data for Import Export Business -->
     <script type="application/ld+json">
     {
@@ -95,32 +99,43 @@
                     <h2>Vasanisha</h2>
                 </a>
             </div>
+            <!-- Navigation Menu (translatable) -->
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#services" class="nav-link">Services</a>
+                    <a href="index.html#services" class="nav-link" data-i18n="nav.services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#about" class="nav-link">About Us</a>
+                    <a href="index.html#about" class="nav-link" data-i18n="nav.about">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact Us</a>
+                    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="work-with-us.html" class="nav-link">Work With Us</a>
+                    <a href="work-with-us.html" class="nav-link" data-i18n="nav.workWithUs">Work With Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="usecases.html" class="nav-link">Use Cases</a>
+                    <a href="usecases.html" class="nav-link" data-i18n="nav.useCases">Use Cases</a>
                 </li>
                 <li class="nav-item">
-                    <a href="h1b-visa.html" class="nav-link">H1B Visa</a>
+                    <a href="h1b-visa.html" class="nav-link" data-i18n="nav.h1bVisa">H1B Visa</a>
                 </li>
                 <li class="nav-item">
-                    <a href="import-export.html" class="nav-link active">Import Export</a>
+                    <a href="import-export.html" class="nav-link active" data-i18n="nav.importExport">Import Export</a>
                 </li>
             </ul>
+            
+            <!-- Language Switcher (Multi-language Support) -->
+            <div class="language-switcher" style="margin-left: 1rem; margin-right: 5px;">
+                <select id="languageSelect" style="padding: 6px 12px; border-radius: 6px; border: 1px solid #757575; background: white; cursor: pointer; font-size: 0.9rem;" onchange="i18n.changeLanguage(this.value)">
+                    <option value="en">EN</option>
+                    <option value="de">DE</option>
+                    <option value="nl">NL</option>
+                </select>
+            </div>
+            
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -129,68 +144,79 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (translatable) -->
     <section class="hero import-export-hero">
         <div class="hero-content">
-            <h1>Global Import Export Business Solutions - Merchant Trader</h1>
-            <p style="color: rgba(245, 245, 245, 0.95);">Connecting businesses worldwide through professional merchant trader services, import export solutions, customs clearance, and international trade facilitation</p>
+            <!-- Hero title (translates to German/Dutch) -->
+            <h1 data-i18n="hero.title">Global Import Export Business Solutions - Merchant Trader</h1>
+            <!-- Hero subtitle (translates to German/Dutch) -->
+            <p style="color: rgba(245, 245, 245, 0.95);" data-i18n="hero.subtitle">Connecting businesses worldwide through professional merchant trader services, import export solutions, customs clearance, and international trade facilitation</p>
             <div class="hero-buttons">
-                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                <!-- Contact button (translates to German/Dutch) -->
+                <a href="contact.html" class="btn btn-primary" data-i18n="hero.contactButton">Contact Us</a>
             </div>
         </div>
     </section>
 
-    <!-- Services Overview -->
+    <!-- Services Overview (translatable) -->
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2>Our Import Export & Merchant Trader Services</h2>
-                <p>Comprehensive global trade solutions from experienced merchant traders to help your business expand internationally</p>
+                <!-- Section title (translates to German/Dutch) -->
+                <h2 data-i18n="services.sectionTitle">Our Import Export & Merchant Trader Services</h2>
+                <!-- Section subtitle (translates to German/Dutch) -->
+                <p data-i18n="services.sectionSubtitle">Comprehensive global trade solutions from experienced merchant traders to help your business expand internationally</p>
             </div>
             
             <div class="services-grid">
+                <!-- Import Services Card (translatable) -->
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="material-icons">shopping_cart</i>
                     </div>
-                    <h3>Import Services</h3>
-                    <p>Streamlined import solutions for businesses looking to source products from international markets. We handle documentation, customs clearance, and logistics.</p>
+                    <!-- Service title (DE: Import-Dienstleistungen, NL: Import Diensten) -->
+                    <h3 data-i18n="services.import.title">Import Services</h3>
+                    <!-- Service description (translates to German/Dutch) -->
+                    <p data-i18n="services.import.description">Streamlined import solutions for businesses looking to source products from international markets. We handle documentation, customs clearance, and logistics.</p>
                     <ul class="service-features">
-                        <li>Customs Clearance & Documentation</li>
-                        <li>Import Licensing & Compliance</li>
-                        <li>Product Sourcing & Quality Control</li>
-                        <li>Freight Forwarding & Logistics</li>
-                        <li>Duty & Tax Optimization</li>
+                        <!-- Feature list (translates to German/Dutch) -->
+                        <li data-i18n="services.import.features.0">Customs Clearance & Documentation</li>
+                        <li data-i18n="services.import.features.1">Import Licensing & Compliance</li>
+                        <li data-i18n="services.import.features.2">Product Sourcing & Quality Control</li>
+                        <li data-i18n="services.import.features.3">Freight Forwarding & Logistics</li>
+                        <li data-i18n="services.import.features.4">Duty & Tax Optimization</li>
                     </ul>
                 </div>
 
+                <!-- Export Services Card (translatable) -->
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="material-icons">local_shipping</i>
                     </div>
-                    <h3>Export Services</h3>
-                    <p>Professional export services to help your products reach global markets. We manage documentation, shipping, and compliance requirements.</p>
+                    <h3 data-i18n="services.export.title">Export Services</h3>
+                    <p data-i18n="services.export.description">Professional export services to help your products reach global markets. We manage documentation, shipping, and compliance requirements.</p>
                     <ul class="service-features">
-                        <li>Export Documentation & Licensing</li>
-                        <li>International Shipping & Logistics</li>
-                        <li>Export Compliance & Regulations</li>
-                        <li>Market Research & Entry Strategy</li>
-                        <li>Payment & Finance Solutions</li>
+                        <li data-i18n="services.export.features.0">Export Documentation & Licensing</li>
+                        <li data-i18n="services.export.features.1">International Shipping & Logistics</li>
+                        <li data-i18n="services.export.features.2">Export Compliance & Regulations</li>
+                        <li data-i18n="services.export.features.3">Market Research & Entry Strategy</li>
+                        <li data-i18n="services.export.features.4">Payment & Finance Solutions</li>
                     </ul>
                 </div>
 
+                <!-- Trade Documentation Card (translatable) -->
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="material-icons">description</i>
                     </div>
-                    <h3>Trade Documentation</h3>
-                    <p>Complete documentation services for seamless international trade transactions. We ensure all paperwork is accurate and compliant.</p>
+                    <h3 data-i18n="services.documentation.title">Trade Documentation</h3>
+                    <p data-i18n="services.documentation.description">Complete documentation services for seamless international trade transactions. We ensure all paperwork is accurate and compliant.</p>
                     <ul class="service-features">
-                        <li>Commercial Invoices & Packing Lists</li>
-                        <li>Bill of Lading & Shipping Documents</li>
-                        <li>Certificates of Origin</li>
-                        <li>Insurance & Banking Documents</li>
-                        <li>Customs Declarations</li>
+                        <li data-i18n="services.documentation.features.0">Commercial Invoices & Packing Lists</li>
+                        <li data-i18n="services.documentation.features.1">Bill of Lading & Shipping Documents</li>
+                        <li data-i18n="services.documentation.features.2">Certificates of Origin</li>
+                        <li data-i18n="services.documentation.features.3">Insurance & Banking Documents</li>
+                        <li data-i18n="services.documentation.features.4">Customs Declarations</li>
                     </ul>
                 </div>
 
@@ -209,348 +235,304 @@
                     </ul>
                 </div>
 
+                <!-- Logistics & Shipping Card (translatable) -->
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="material-icons">flight</i>
                     </div>
-                    <h3>Logistics & Shipping</h3>
-                    <p>End-to-end logistics solutions for air, sea, and land freight. We coordinate with reliable carriers worldwide.</p>
+                    <h3 data-i18n="services.logistics.title">Logistics & Shipping</h3>
+                    <p data-i18n="services.logistics.description">End-to-end logistics solutions for air, sea, and land freight. We coordinate with reliable carriers worldwide.</p>
                     <ul class="service-features">
-                        <li>Air Freight Services</li>
-                        <li>Sea Freight & Container Shipping</li>
-                        <li>Land Transportation</li>
-                        <li>Warehousing & Distribution</li>
-                        <li>Real-time Tracking & Updates</li>
+                        <li data-i18n="services.logistics.features.0">Air Freight Services</li>
+                        <li data-i18n="services.logistics.features.1">Sea Freight & Container Shipping</li>
+                        <li data-i18n="services.logistics.features.2">Land Transportation</li>
+                        <li data-i18n="services.logistics.features.3">Warehousing & Distribution</li>
+                        <li data-i18n="services.logistics.features.4">Real-time Tracking & Updates</li>
                     </ul>
                 </div>
 
+                <!-- Trade Consulting Card (translatable) -->
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="material-icons">business_center</i>
                     </div>
-                    <h3>Trade Consulting</h3>
-                    <p>Strategic consulting services to help businesses navigate international trade regulations and optimize their global operations.</p>
+                    <h3 data-i18n="services.consulting.title">Trade Consulting</h3>
+                    <p data-i18n="services.consulting.description">Strategic consulting services to help businesses navigate international trade regulations and optimize their global operations.</p>
                     <ul class="service-features">
-                        <li>Market Entry Strategy</li>
-                        <li>Trade Compliance Consulting</li>
-                        <li>International Business Development</li>
-                        <li>Risk Assessment & Mitigation</li>
-                        <li>Trade Finance Solutions</li>
+                        <li data-i18n="services.consulting.features.0">Market Entry Strategy</li>
+                        <li data-i18n="services.consulting.features.1">Trade Compliance Consulting</li>
+                        <li data-i18n="services.consulting.features.2">International Business Development</li>
+                        <li data-i18n="services.consulting.features.3">Risk Assessment & Mitigation</li>
+                        <li data-i18n="services.consulting.features.4">Trade Finance Solutions</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Our Import Export Process -->
+    <!-- Our Import Export Process (translatable) -->
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2>Our Import Export Process</h2>
-                <p>A structured, transparent workflow ensuring seamless international trade from consultation to delivery</p>
+                <!-- Process section title (translates to German/Dutch) -->
+                <h2 data-i18n="process.sectionTitle">Our Import Export Process</h2>
+                <!-- Process section subtitle (translates to German/Dutch) -->
+                <p data-i18n="process.sectionSubtitle">A structured, transparent workflow ensuring seamless international trade from consultation to delivery</p>
             </div>
             
             <div class="process-grid">
-                <!-- Step 1: Initial Consultation & Product Specification -->
+                <!-- Step 1: Initial Consultation (simplified, translatable) -->
                 <div class="process-step">
                     <div class="process-step-header">
                         <div class="process-number">1</div>
-                        <h3><i class="material-icons">meeting_room</i> Initial Consultation & Product Specification</h3>
+                        <h3 data-i18n="process.step1.title"><i class="material-icons">meeting_room</i> Initial Consultation</h3>
                     </div>
                     <div class="process-content">
-                        <div class="process-details">
-                            <div class="process-activities">
-                                <strong>Activities:</strong> Buyer-seller discussion on specifications • Market analysis • Quality standards review • Cost estimation
-                            </div>
-                            <div class="process-documents">
-                                <strong>Documents:</strong> Product spec sheet • Technical datasheets • Sample requirements • Business registration
-                            </div>
-                        </div>
-                        <div class="process-update">
-                            <i class="material-icons">update</i> <span>Status: Initial consultation summary</span>
-                        </div>
+                        <!-- Simplified description (translates to German/Dutch) -->
+                        <p data-i18n="process.step1.description">We discuss your product requirements, conduct market analysis, review quality standards, and provide detailed cost estimates. Required documents include product specifications, technical datasheets, and business registration.</p>
                     </div>
                 </div>
 
-                <!-- Step 2: Certification & Compliance Check -->
+                <!-- Step 2: Certification & Compliance (simplified, translatable) -->
                 <div class="process-step">
                     <div class="process-step-header">
                         <div class="process-number">2</div>
-                        <h3><i class="material-icons">verified</i> Certification & Compliance Verification</h3>
+                        <h3 data-i18n="process.step2.title"><i class="material-icons">verified</i> Certification & Compliance</h3>
                     </div>
                     <div class="process-content">
-                        <div class="process-details">
-                            <div class="process-activities">
-                                <strong>Activities:</strong> Identify certifications (ISO, CE, FDA) • Verify compliance • Check license requirements • Assess compliance needs
-                            </div>
-                            <div class="process-documents">
-                                <strong>Documents:</strong> Existing certifications • Test reports • Compliance checklist • License applications
-                            </div>
-                        </div>
-                        <div class="process-update">
-                            <i class="material-icons">update</i> <span>Status: Compliance checklist provided</span>
-                        </div>
+                        <!-- Simplified description (translates to German/Dutch) -->
+                        <p data-i18n="process.step2.description">We identify and verify required certifications (ISO, CE, FDA), ensure regulatory compliance, and handle licensing requirements. Documents include existing certificates, test reports, and compliance checklists.</p>
                     </div>
                 </div>
 
-                <!-- Step 3: Pricing & Terms Negotiation -->
+                <!-- Step 3: Pricing & Terms (simplified, translatable) -->
                 <div class="process-step">
                     <div class="process-step-header">
                         <div class="process-number">3</div>
-                        <h3><i class="material-icons">handshake</i> Pricing & Terms Negotiation</h3>
+                        <h3 data-i18n="process.step3.title"><i class="material-icons">handshake</i> Pricing & Terms</h3>
                     </div>
                     <div class="process-content">
-                        <div class="process-details">
-                            <div class="process-activities">
-                                <strong>Activities:</strong> Pricing negotiations • Payment terms (LC, TT) • Shipping terms (FOB, CIF, EXW) • Packaging specs • Incoterms agreement
-                            </div>
-                            <div class="process-documents">
-                                <strong>Documents:</strong> Proforma invoice (PI) • Price quotation • Payment terms agreement • Packaging specifications
-                            </div>
-                        </div>
-                        <div class="process-update">
-                            <i class="material-icons">update</i> <span>Status: Negotiation progress updates</span>
-                        </div>
+                        <!-- Simplified description (translates to German/Dutch) -->
+                        <p data-i18n="process.step3.description">Negotiate pricing, payment terms (LC, TT), shipping terms (FOB, CIF, EXW), and Incoterms agreement. We prepare proforma invoice, price quotation, and finalize packaging specifications.</p>
                     </div>
                 </div>
 
-                <!-- Step 4: Contract Finalization -->
+                <!-- Step 4: Contract Finalization (simplified, translatable) -->
                 <div class="process-step">
                     <div class="process-step-header">
                         <div class="process-number">4</div>
-                        <h3><i class="material-icons">description</i> Contract Finalization & Agreement</h3>
+                        <h3 data-i18n="process.step4.title"><i class="material-icons">description</i> Contract Finalization</h3>
                     </div>
                     <div class="process-content">
-                        <div class="process-details">
-                            <div class="process-activities">
-                                <strong>Activities:</strong> Draft & review contract • Finalize terms • Obtain signatures • Confirm payment • Set timeline
-                            </div>
-                            <div class="process-documents">
-                                <strong>Documents:</strong> Sales/Purchase contract • Purchase order (PO) • Letter of Credit • Signed agreements
-                            </div>
-                        </div>
-                        <div class="process-update">
-                            <i class="material-icons">update</i> <span>Status: Contract execution confirmation</span>
-                        </div>
+                        <!-- Simplified description (translates to German/Dutch) -->
+                        <p data-i18n="process.step4.description">Draft and review sales contract, finalize terms, obtain signatures, and confirm payment arrangements. Key documents include purchase contract, purchase order (PO), and Letter of Credit.</p>
                     </div>
                 </div>
 
-                <!-- Step 5: Procurement & Production -->
+                <!-- Step 5: Procurement & Production (simplified, translatable) -->
                 <div class="process-step">
                     <div class="process-step-header">
                         <div class="process-number">5</div>
-                        <h3><i class="material-icons">inventory</i> Procurement & Production Coordination</h3>
+                        <h3 data-i18n="process.step5.title"><i class="material-icons">inventory</i> Procurement & Production</h3>
                     </div>
                     <div class="process-content">
-                        <div class="process-details">
-                            <div class="process-activities">
-                                <strong>Activities:</strong> Coordinate suppliers • Monitor production • Quality inspections • Arrange packaging • Prepare for shipment
-                            </div>
-                            <div class="process-documents">
-                                <strong>Documents:</strong> Production status reports • Quality certificates • Packing list (draft) • Manufacturing certificates
-                            </div>
-                        </div>
-                        <div class="process-update">
-                            <i class="material-icons">update</i> <span>Status: Weekly progress reports</span>
-                        </div>
+                        <!-- Simplified description (translates to German/Dutch) -->
+                        <p data-i18n="process.step5.description">Coordinate with suppliers, monitor production progress, conduct quality inspections, and arrange proper packaging. Regular production status reports and quality certificates provided.</p>
                     </div>
                 </div>
 
-                <!-- Step 6: Documentation & Logistics -->
+                <!-- Step 6: Documentation & Logistics (simplified, translatable) -->
                 <div class="process-step">
                     <div class="process-step-header">
                         <div class="process-number">6</div>
-                        <h3><i class="material-icons">assignment</i> Documentation & Logistics Arrangement</h3>
+                        <h3 data-i18n="process.step6.title"><i class="material-icons">assignment</i> Documentation & Logistics</h3>
                     </div>
                     <div class="process-content">
-                        <div class="process-details">
-                            <div class="process-activities">
-                                <strong>Activities:</strong> Prepare invoices & packing lists • Obtain certificates of origin • Arrange shipping • Book cargo • Coordinate customs
-                            </div>
-                            <div class="process-documents">
-                                <strong>Documents:</strong> Commercial invoice • Packing list • Certificate of origin • Bill of lading/Airway bill • Shipping instructions
-                            </div>
-                        </div>
-                        <div class="process-update">
-                            <i class="material-icons">update</i> <span>Status: Documentation & shipping schedule</span>
-                        </div>
+                        <!-- Simplified description (translates to German/Dutch) -->
+                        <p data-i18n="process.step6.description">Prepare complete trade documentation including commercial invoice, packing list, certificate of origin, and bill of lading. Arrange shipping and book cargo with reliable carriers.</p>
                     </div>
                 </div>
 
-                <!-- Step 7: Customs Clearance & Shipping -->
+                <!-- Step 7: Customs Clearance (simplified, translatable) -->
                 <div class="process-step">
                     <div class="process-step-header">
                         <div class="process-number">7</div>
-                        <h3><i class="material-icons">verified_user</i> Customs Clearance & Shipping</h3>
+                        <h3 data-i18n="process.step7.title"><i class="material-icons">verified_user</i> Customs Clearance</h3>
                     </div>
                     <div class="process-content">
-                        <div class="process-details">
-                            <div class="process-activities">
-                                <strong>Activities:</strong> Submit customs declarations • Coordinate clearance • Handle duty/tax payments • Monitor transit • Real-time tracking
-                            </div>
-                            <div class="process-documents">
-                                <strong>Documents:</strong> Customs declaration forms • HS code classification • Insurance documents • Transport documents • Clearance certificate
-                            </div>
-                        </div>
-                        <div class="process-update">
-                            <i class="material-icons">update</i> <span>Status: Daily tracking updates</span>
-                        </div>
+                        <!-- Simplified description (translates to German/Dutch) -->
+                        <p data-i18n="process.step7.description">Submit customs declarations with proper HS code classification, coordinate clearance procedures, handle duty and tax payments, and provide real-time tracking throughout transit.</p>
                     </div>
                 </div>
 
-                <!-- Step 8: Delivery & Post-Delivery Support -->
+                <!-- Step 8: Delivery & Support (simplified, translatable) -->
                 <div class="process-step">
                     <div class="process-step-header">
                         <div class="process-number">8</div>
-                        <h3><i class="material-icons">delivery_dining</i> Delivery & Post-Delivery Support</h3>
+                        <h3 data-i18n="process.step8.title"><i class="material-icons">delivery_dining</i> Delivery & Support</h3>
                     </div>
                     <div class="process-content">
-                        <div class="process-details">
-                            <div class="process-activities">
-                                <strong>Activities:</strong> Confirm delivery • Obtain proof of delivery • Handle post-delivery issues • Collect feedback • Future planning
-                            </div>
-                            <div class="process-documents">
-                                <strong>Documents:</strong> Delivery confirmation • Proof of delivery (POD) • Final invoice • Transaction summary
-                            </div>
-                        </div>
-                        <div class="process-update">
-                            <i class="material-icons">update</i> <span>Status: Delivery confirmation & support</span>
-                        </div>
+                        <!-- Simplified description (translates to German/Dutch) -->
+                        <p data-i18n="process.step8.description">Confirm successful delivery, obtain proof of delivery (POD), handle any post-delivery issues, and provide ongoing support. Complete transaction with final invoice and summary.</p>
                     </div>
                 </div>
             </div>
             
+            <!-- Process disclaimer (translatable) -->
             <div class="process-disclaimer">
-                <p><sup>*</sup> <em>Please note that the processes listed above are not mandatory. They can vary from one case to another based on individual circumstances.</em></p>
+                <p data-i18n="process.disclaimer"><sup>*</sup> <em>Please note that the processes listed above are not mandatory. They can vary from one case to another based on individual circumstances.</em></p>
             </div>
         </div>
     </section>
 
-    <!-- Benefits Section -->
+    <!-- Benefits Section (translatable) -->
     <section class="section bg-light">
         <div class="container">
             <div class="section-header">
-                <h2>Why Choose Our Import Export Services</h2>
-                <p>Partner with us for reliable, efficient, and compliant international trade solutions</p>
+                <!-- Benefits section title (translates to German/Dutch) -->
+                <h2 data-i18n="benefits.sectionTitle">Why Choose Our Import Export Services</h2>
+                <!-- Benefits section subtitle (translates to German/Dutch) -->
+                <p data-i18n="benefits.sectionSubtitle">Partner with us for reliable, efficient, and compliant international trade solutions</p>
             </div>
             
             <div class="benefits-grid">
+                <!-- Benefit Card: Fast Processing -->
                 <div class="benefit-card">
                     <i class="material-icons">speed</i>
-                    <h3>Fast Processing</h3>
-                    <p>Streamlined processes and efficient documentation handling to minimize delays and expedite your shipments.</p>
+                    <h3 data-i18n="benefits.fastProcessing.title">Fast Processing</h3>
+                    <p data-i18n="benefits.fastProcessing.description">Streamlined processes and efficient documentation handling to minimize delays and expedite your shipments.</p>
                 </div>
+                <!-- Benefit Card: Compliance Guaranteed -->
                 <div class="benefit-card">
                     <i class="material-icons">security</i>
-                    <h3>Compliance Guaranteed</h3>
-                    <p>Full compliance with international trade regulations, customs requirements, and documentation standards.</p>
+                    <h3 data-i18n="benefits.compliance.title">Compliance Guaranteed</h3>
+                    <p data-i18n="benefits.compliance.description">Full compliance with international trade regulations, customs requirements, and documentation standards.</p>
                 </div>
+                <!-- Benefit Card: Global Network -->
                 <div class="benefit-card">
                     <i class="material-icons">public</i>
-                    <h3>Global Network</h3>
-                    <p>Established partnerships with reliable carriers, customs brokers, and agents in major trading countries worldwide.</p>
+                    <h3 data-i18n="benefits.globalNetwork.title">Global Network</h3>
+                    <p data-i18n="benefits.globalNetwork.description">Established partnerships with reliable carriers, customs brokers, and agents in major trading countries worldwide.</p>
                 </div>
+                <!-- Benefit Card: Cost Effective -->
                 <div class="benefit-card">
                     <i class="material-icons">attach_money</i>
-                    <h3>Cost Effective</h3>
-                    <p>Competitive pricing and optimized shipping routes to help reduce your overall import export costs.</p>
+                    <h3 data-i18n="benefits.costEffective.title">Cost Effective</h3>
+                    <p data-i18n="benefits.costEffective.description">Competitive pricing and optimized shipping routes to help reduce your overall import export costs.</p>
                 </div>
+                <!-- Benefit Card: Expert Support -->
                 <div class="benefit-card">
                     <i class="material-icons">support_agent</i>
-                    <h3>Expert Support</h3>
-                    <p>Dedicated trade experts available to guide you through every step of the import export process.</p>
+                    <h3 data-i18n="benefits.expertSupport.title">Expert Support</h3>
+                    <p data-i18n="benefits.expertSupport.description">Dedicated trade experts available to guide you through every step of the import export process.</p>
                 </div>
+                <!-- Benefit Card: Real-time Tracking -->
                 <div class="benefit-card">
                     <i class="material-icons">track_changes</i>
-                    <h3>Real-time Tracking</h3>
-                    <p>Complete visibility of your shipments with real-time tracking and regular status updates.</p>
+                    <h3 data-i18n="benefits.tracking.title">Real-time Tracking</h3>
+                    <p data-i18n="benefits.tracking.description">Complete visibility of your shipments with real-time tracking and regular status updates.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Industries We Serve -->
+    <!-- Industries We Serve (translatable) -->
     <section class="section bg-light">
         <div class="container">
             <div class="section-header">
-                <h2>Industries We Serve</h2>
-                <p>High-demand commodities exported from India to European markets</p>
+                <!-- Industries section title (translates to German/Dutch) -->
+                <h2 data-i18n="industries.sectionTitle">Industries We Serve</h2>
+                <!-- Industries section subtitle (translates to German/Dutch) -->
+                <p data-i18n="industries.sectionSubtitle">High-demand commodities exported from India to European markets</p>
             </div>
             
             <div class="stats-grid">
+                <!-- Industry Card: Engineering Goods -->
                 <div class="stat-card">
                     <div class="stat-icon">
                         <i class="material-icons">precision_manufacturing</i>
                     </div>
-                    <h3>Engineering Goods</h3>
-                    <p>Auto components, machinery parts, electrical equipment, and industrial tools</p>
+                    <h3 data-i18n="industries.engineering.title">Engineering Goods</h3>
+                    <p data-i18n="industries.engineering.description">Auto components, machinery parts, electrical equipment, and industrial tools</p>
                 </div>
+                <!-- Industry Card: Textiles & Apparel -->
                 <div class="stat-card">
                     <div class="stat-icon">
                         <i class="material-icons">checkroom</i>
                     </div>
-                    <h3>Textiles & Apparel</h3>
-                    <p>Cotton fabrics, garments, home textiles, Napkins, footwears and fashion accessories</p>
+                    <h3 data-i18n="industries.textiles.title">Textiles & Apparel</h3>
+                    <p data-i18n="industries.textiles.description">Cotton fabrics, garments, home textiles, Napkins, footwears and fashion accessories</p>
                 </div>
+                <!-- Industry Card: Pharmaceuticals -->
                 <div class="stat-card">
                     <div class="stat-icon">
                         <i class="material-icons">medical_services</i>
                     </div>
-                    <h3>Pharmaceuticals</h3>
-                    <p>Generic medicines, APIs, formulations, and healthcare products</p>
+                    <h3 data-i18n="industries.pharma.title">Pharmaceuticals</h3>
+                    <p data-i18n="industries.pharma.description">Generic medicines, APIs, formulations, and healthcare products</p>
                 </div>
+                <!-- Industry Card: Spices & Agri Products -->
                 <div class="stat-card">
                     <div class="stat-icon">
                         <i class="material-icons">eco</i>
                     </div>
-                    <h3>Spices & Agri Products</h3>
-                    <p>Spices, rice, tea, coffee, cashews, and organic products</p>
+                    <h3 data-i18n="industries.spices.title">Spices & Agri Products</h3>
+                    <p data-i18n="industries.spices.description">Spices, rice, tea, coffee, cashews, and organic products</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- CTA Section (translatable) -->
     <section class="cta">
         <div class="container">
-            <h2>Ready to Expand Your Business Globally?</h2>
-            <p>Let's discuss your import export requirements and create a customized trade solution for your business.</p>
-            <a href="contact.html" class="btn btn-primary">Get Started with Import Export</a>
+            <!-- CTA title (translates to German/Dutch) -->
+            <h2 data-i18n="cta.title">Ready to Expand Your Business Globally?</h2>
+            <!-- CTA subtitle (translates to German/Dutch) -->
+            <p data-i18n="cta.subtitle">Let's discuss your import export requirements and create a customized trade solution for your business.</p>
+            <!-- CTA button (translates to German/Dutch) -->
+            <a href="contact.html" class="btn btn-primary" data-i18n="cta.button">Get Started with Import Export</a>
         </div>
     </section>
 
     <!-- Footer -->
+    <!-- Footer (translatable) -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
+                <!-- Company info section -->
                 <div class="footer-section">
-                    <h3>Vasanisha</h3>
-                    <p>Professional app development, digital transformation, and import export business services for small businesses. Mumbai, INDIA.</p>
+                    <h3 data-i18n="footer.company.name">Vasanisha</h3>
+                    <!-- Company tagline (translates to German/Dutch) -->
+                    <p data-i18n="footer.company.tagline">Professional app development, digital transformation, and import export business services for small businesses. Mumbai, INDIA.</p>
                 </div>
+                <!-- Services section -->
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h4 data-i18n="footer.servicesTitle">Services</h4>
                     <ul>
-                        <li><a href="index.html#services">App Development</a></li>
-                        <li><a href="index.html#services">Website Development</a></li>
-                        <li><a href="index.html#services">Digital Transformation</a></li>
-                        <li><a href="index.html#services">Google Business Profile</a></li>
-                        <li><a href="import-export.html">Import Export</a></li>
+                        <li><a href="index.html#services" data-i18n="footer.servicesItems.appDev">App Development</a></li>
+                        <li><a href="index.html#services" data-i18n="footer.servicesItems.webDev">Website Development</a></li>
+                        <li><a href="index.html#services" data-i18n="footer.servicesItems.digital">Digital Transformation</a></li>
+                        <li><a href="index.html#services" data-i18n="footer.servicesItems.gbp">Google Business Profile</a></li>
+                        <li><a href="import-export.html" data-i18n="footer.servicesItems.importExport">Import Export</a></li>
                     </ul>
                 </div>
+                <!-- Quick Links section -->
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4 data-i18n="footer.quickLinksTitle">Quick Links</h4>
                     <ul>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="work-with-us.html">Work With Us</a></li>
-                        <li><a href="usecases.html">Use Cases</a></li>
-                        <li><a href="h1b-visa.html">H1B Visa</a></li>
-                        <li><a href="import-export.html">Import Export</a></li>
-                        <li><a href="https://vasanisha.blogspot.com">Blog</a></li>
-                        <li><a href="sitemap.xml" target="_blank">Sitemap</a></li>
+                        <li><a href="contact.html" data-i18n="footer.quickLinksItems.contact">Contact Us</a></li>
+                        <li><a href="work-with-us.html" data-i18n="footer.quickLinksItems.work">Work With Us</a></li>
+                        <li><a href="usecases.html" data-i18n="footer.quickLinksItems.useCases">Use Cases</a></li>
+                        <li><a href="h1b-visa.html" data-i18n="footer.quickLinksItems.h1b">H1B Visa</a></li>
+                        <li><a href="import-export.html" data-i18n="footer.quickLinksItems.importExport">Import Export</a></li>
+                        <li><a href="https://vasanisha.blogspot.com" data-i18n="footer.quickLinksItems.blog">Blog</a></li>
+                        <li><a href="sitemap.xml" target="_blank" data-i18n="footer.quickLinksItems.sitemap">Sitemap</a></li>
                     </ul>
                 </div>
+                <!-- Connect section -->
                 <div class="footer-section">
-                    <h4>Connect</h4>
+                    <h4 data-i18n="footer.connectTitle">Connect</h4>
                     <div class="social-links">
                         <a href="https://www.blogger.com/profile/13210697558886179420" target="_blank">
                             <i class="material-icons">person</i>
@@ -565,7 +547,8 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Vasanisha. All rights reserved.</p>
+                <!-- Copyright (partially translatable) -->
+                <p>&copy; <span id="current-year">2024</span> Vasanisha. <span data-i18n="footer.copyright">All rights reserved.</span></p>
             </div>
         </div>
     </footer>
