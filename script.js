@@ -87,6 +87,29 @@ function validateName(name) {
     return nameRegex.test(name) && name.trim().length >= 2;
 }
 
+function validatePhone(phone) {
+    // If empty, it's valid (field is optional)
+    if (!phone || phone.trim() === '') {
+        return true;
+    }
+    
+    // Flexible international phone format
+    // Allows: +1234567890, (123) 456-7890, 123-456-7890, +1-234-567-8900
+    const phoneRegex = /^[\+]?[(]?[0-9]{1,4}[)]?[-\s\.]?[(]?[0-9]{1,4}[)]?[-\s\.]?[0-9]{1,4}[-\s\.]?[0-9]{1,4}$/;
+    
+    // Count actual digits
+    const digitsOnly = phone.replace(/[\s\-\(\)\.+]/g, '');
+    const digitCount = digitsOnly.length;
+    
+    // Must have between 10 and 15 digits
+    if (digitCount < 10 || digitCount > 15) {
+        return false;
+    }
+    
+    // Must match pattern
+    return phoneRegex.test(phone);
+}
+
 function validateDescription(description) {
     // Check if description contains only allowed characters
     const allowedChars = /^[a-zA-Z0-9\s.\-;@:?!,\s]+$/;
@@ -128,7 +151,9 @@ function validateContactForm() {
     const form = document.getElementById('contactForm');
     if (!form) return;
 
+    const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
     const description = document.getElementById('description').value;
     const captchaInput = document.getElementById('captcha').value;
     const captchaImage = document.querySelector('.captcha-image');
@@ -143,6 +168,19 @@ function validateContactForm() {
         field.style.boxShadow = '';
     });
 
+    // Validate name (REQUIRED)
+    if (!name || !name.trim()) {
+        showFieldError('name', 'Name is required');
+        highlightErrorField('name', true);
+        isValid = false;
+    } else if (!validateName(name)) {
+        showFieldError('name', 'Name can only contain letters, spaces, hyphens, and apostrophes (min 2 characters)');
+        highlightErrorField('name', true);
+        isValid = false;
+    } else {
+        highlightErrorField('name', false);
+    }
+
     // Validate email
     if (!email) {
         showFieldError('email', 'Email is required');
@@ -154,6 +192,15 @@ function validateContactForm() {
         isValid = false;
     } else {
         highlightErrorField('email', false);
+    }
+
+    // Validate phone (optional but must be valid if provided)
+    if (phone && !validatePhone(phone)) {
+        showFieldError('phone', 'Please enter a valid phone number (10-15 digits, e.g., +1 555-123-4567)');
+        highlightErrorField('phone', true);
+        isValid = false;
+    } else {
+        highlightErrorField('phone', false);
     }
 
     // Validate description
@@ -355,15 +402,15 @@ function submitContactForm(event) {
     // Prepare email template parameters
     const templateParams = {
         to_email: 'abhishek.agawane@gmail.com',
-        from_name: formData.get('name') || 'Anonymous',
+        from_name: formData.get('name').trim(),
         from_email: formData.get('email'),
         phone: formData.get('phone') || 'Not provided',
         service: formData.get('service') || 'Not specified',
         message: formData.get('description'),
         timestamp: timestamp,
-        subject: `Contact Form - ${formData.get('name') || 'Anonymous'} | ${formData.get('service') || 'General'} | ${timestamp}`,
+        subject: `Contact Form - ${formData.get('name').trim()} | ${formData.get('service') || 'General'} | ${timestamp}`,
         reply_to: formData.get('email'),
-        custom_subject: `Contact Form - ${formData.get('name') || 'Anonymous'} | ${formData.get('service') || 'General'} | ${timestamp}`
+        custom_subject: `Contact Form - ${formData.get('name').trim()} | ${formData.get('service') || 'General'} | ${timestamp}`
     };
 
     // Send email using EmailJS

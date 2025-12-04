@@ -277,7 +277,8 @@ p {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: var(--border-radius);
-    padding: 2rem;
+    padding: 1.5rem 2rem;
+    min-width: 140px;
     text-align: center;
     box-shadow: var(--shadow-medium);
     transition: var(--transition);
@@ -289,32 +290,32 @@ p {
 }
 
 .floating-card:nth-child(1) {
-    top: 0;
-    left: 0;
+    top: 5%;
+    left: 5%;
     animation: float 3s ease-in-out infinite;
 }
 
 .floating-card:nth-child(2) {
-    top: 50%;
-    right: 0;
+    top: 48%;
+    right: 5%;
     animation: float 3s ease-in-out infinite 1s;
 }
 
 .floating-card:nth-child(3) {
-    bottom: 0;
-    left: 50%;
+    bottom: 5%;
+    left: 45%;
     animation: float 3s ease-in-out infinite 2s;
 }
 
 .floating-card:nth-child(4) {
-    top: 25%;
-    right: 25%;
+    top: 22%;
+    right: 22%;
     animation: float 3s ease-in-out infinite 1.5s;
 }
 
 .floating-card i {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
     color: var(--secondary-color);
 }
 
@@ -725,11 +726,17 @@ select.error:focus {
     }
 
     .floating-card {
-        padding: 1rem;
+        padding: 1rem 1.5rem;
+        min-width: 110px;
     }
 
     .floating-card i {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .floating-card h3 {
+        font-size: 0.9rem;
     }
 }
 
