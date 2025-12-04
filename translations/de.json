@@ -243,9 +243,9 @@
       "allowedChars": "Erlaubte Zeichen: Buchstaben, Zahlen und Sonderzeichen: . - ; @ : ? ! ,"
     },
     "services": {
-      "appDev": {
-        "title": "App-Entwicklung",
-        "description": "Maßgeschneiderte mobile Anwendungen für iOS- und Android-Plattformen mit modernem UI/UX-Design."
+      "exim": {
+        "title": "EXIM Geschäft",
+        "description": "Professionelle Import-Export-Dienstleistungen, die Unternehmen weltweit verbinden. Handelserleichterung, Zollabfertigung und internationale Logistiklösungen."
       },
       "webDev": {
         "title": "Website-Entwicklung",

@@ -243,9 +243,9 @@
       "allowedChars": "Toegestane tekens: letters, cijfers en speciale tekens: . - ; @ : ? ! ,"
     },
     "services": {
-      "appDev": {
-        "title": "App-ontwikkeling",
-        "description": "Op maat gemaakte mobiele applicaties voor iOS- en Android-platforms met modern UI/UX-ontwerp."
+      "exim": {
+        "title": "EXIM Bedrijf",
+        "description": "Professionele import-export diensten die bedrijven wereldwijd verbinden. Handelsfacilitatie, douaneafhandeling en internationale logistieke oplossingen."
       },
       "webDev": {
         "title": "Website-ontwikkeling",
