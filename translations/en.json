@@ -198,6 +198,66 @@
     "button": "Get Started with Import Export"
   },
   
+  "contact": {
+    "meta": {
+      "title": "Contact Us - Vasanisha Digital Solutions",
+      "description": "Contact Vasanisha for professional app development, digital transformation, website development, Google Business Profile optimization, and import-export services. Expert freelancer app developer for small business solutions. Get in touch for custom mobile apps, web development, and digital transformation projects."
+    },
+    "header": {
+      "title": "Contact Us",
+      "subtitle": "Ready to transform your business? Get in touch with our expert team today."
+    },
+    "info": {
+      "title": "Get In Touch",
+      "intro": "We're here to help you bring your digital vision to life. Whether you need a mobile app, website, or digital transformation services, our team is ready to assist you.",
+      "email": "Email",
+      "responseTime": "Response Time",
+      "responseValue": "Within 24 hours",
+      "serviceArea": "Service Area",
+      "serviceValue": "Worldwide"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "nameLabel": "Name *",
+      "emailLabel": "Email *",
+      "phoneLabel": "Phone (Optional)",
+      "serviceLabel": "Service Interest",
+      "descriptionLabel": "Project Description *",
+      "captchaLabel": "CAPTCHA *",
+      "submitButton": "Send Message",
+      "namePlaceholder": "Your full name",
+      "emailPlaceholder": "your.email@example.com",
+      "phonePlaceholder": "+1 (555) 123-4567",
+      "descriptionPlaceholder": "Tell us about your project requirements...",
+      "captchaPlaceholder": "Enter the code",
+      "selectService": "Select a service",
+      "serviceOptions": {
+        "appDev": "App Development",
+        "webDev": "Website Development",
+        "digital": "Digital Transformation",
+        "gbp": "Google Business Profile",
+        "importExport": "Import Export",
+        "consultation": "Consultation",
+        "other": "Other"
+      },
+      "allowedChars": "Allowed characters: letters, numbers, and special characters: . - ; @ : ? ! ,"
+    },
+    "services": {
+      "appDev": {
+        "title": "App Development",
+        "description": "Custom mobile applications for iOS and Android platforms with modern UI/UX design."
+      },
+      "webDev": {
+        "title": "Website Development",
+        "description": "Professional websites with SEO optimization and responsive design for all devices."
+      },
+      "digital": {
+        "title": "Digital Transformation",
+        "description": "Transform your business processes with cutting-edge digital solutions."
+      }
+    }
+  },
+  
   "footer": {
     "company": {
       "name": "Vasanisha",

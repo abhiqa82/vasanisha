@@ -198,6 +198,66 @@
     "button": "Beginnen Sie mit Import Export"
   },
   
+  "contact": {
+    "meta": {
+      "title": "Kontakt - Vasanisha Digitale Lösungen",
+      "description": "Kontaktieren Sie Vasanisha für professionelle App-Entwicklung, digitale Transformation, Website-Entwicklung, Google Unternehmensprofil-Optimierung und Import-Export-Dienstleistungen. Erfahrener freiberuflicher App-Entwickler für kleine Unternehmenslösungen. Kontaktieren Sie uns für maßgeschneiderte mobile Apps, Webentwicklung und digitale Transformationsprojekte."
+    },
+    "header": {
+      "title": "Kontakt",
+      "subtitle": "Bereit, Ihr Geschäft zu transformieren? Kontaktieren Sie unser Expertenteam noch heute."
+    },
+    "info": {
+      "title": "Kontaktieren Sie uns",
+      "intro": "Wir sind hier, um Ihnen zu helfen, Ihre digitale Vision zum Leben zu erwecken. Ob Sie eine mobile App, eine Website oder digitale Transformationsdienste benötigen, unser Team ist bereit, Sie zu unterstützen.",
+      "email": "E-Mail",
+      "responseTime": "Antwortzeit",
+      "responseValue": "Innerhalb von 24 Stunden",
+      "serviceArea": "Servicebereich",
+      "serviceValue": "Weltweit"
+    },
+    "form": {
+      "title": "Senden Sie uns eine Nachricht",
+      "nameLabel": "Name *",
+      "emailLabel": "E-Mail *",
+      "phoneLabel": "Telefon (Optional)",
+      "serviceLabel": "Service-Interesse",
+      "descriptionLabel": "Projektbeschreibung *",
+      "captchaLabel": "CAPTCHA *",
+      "submitButton": "Nachricht senden",
+      "namePlaceholder": "Ihr vollständiger Name",
+      "emailPlaceholder": "ihre.email@beispiel.de",
+      "phonePlaceholder": "+49 (555) 123-4567",
+      "descriptionPlaceholder": "Erzählen Sie uns von Ihren Projektanforderungen...",
+      "captchaPlaceholder": "Code eingeben",
+      "selectService": "Wählen Sie einen Service",
+      "serviceOptions": {
+        "appDev": "App-Entwicklung",
+        "webDev": "Website-Entwicklung",
+        "digital": "Digitale Transformation",
+        "gbp": "Google Unternehmensprofil",
+        "importExport": "Import Export",
+        "consultation": "Beratung",
+        "other": "Andere"
+      },
+      "allowedChars": "Erlaubte Zeichen: Buchstaben, Zahlen und Sonderzeichen: . - ; @ : ? ! ,"
+    },
+    "services": {
+      "appDev": {
+        "title": "App-Entwicklung",
+        "description": "Maßgeschneiderte mobile Anwendungen für iOS- und Android-Plattformen mit modernem UI/UX-Design."
+      },
+      "webDev": {
+        "title": "Website-Entwicklung",
+        "description": "Professionelle Websites mit SEO-Optimierung und responsivem Design für alle Geräte."
+      },
+      "digital": {
+        "title": "Digitale Transformation",
+        "description": "Transformieren Sie Ihre Geschäftsprozesse mit modernsten digitalen Lösungen."
+      }
+    }
+  },
+  
   "footer": {
     "company": {
       "name": "Vasanisha",

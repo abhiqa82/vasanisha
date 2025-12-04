@@ -198,6 +198,66 @@
     "button": "Begin met Import Export"
   },
   
+  "contact": {
+    "meta": {
+      "title": "Contact - Vasanisha Digitale Oplossingen",
+      "description": "Neem contact op met Vasanisha voor professionele app-ontwikkeling, digitale transformatie, website-ontwikkeling, Google Bedrijfsprofiel-optimalisatie en import-export diensten. Ervaren freelance app-ontwikkelaar voor kleine bedrijfsoplossingen. Neem contact op voor op maat gemaakte mobiele apps, webontwikkeling en digitale transformatieprojecten."
+    },
+    "header": {
+      "title": "Contact",
+      "subtitle": "Klaar om uw bedrijf te transformeren? Neem vandaag nog contact op met ons expertenteam."
+    },
+    "info": {
+      "title": "Neem Contact Op",
+      "intro": "We zijn er om u te helpen uw digitale visie tot leven te brengen. Of u nu een mobiele app, website of digitale transformatiediensten nodig heeft, ons team staat klaar om u te helpen.",
+      "email": "E-mail",
+      "responseTime": "Reactietijd",
+      "responseValue": "Binnen 24 uur",
+      "serviceArea": "Servicegebied",
+      "serviceValue": "Wereldwijd"
+    },
+    "form": {
+      "title": "Stuur ons een bericht",
+      "nameLabel": "Naam *",
+      "emailLabel": "E-mail *",
+      "phoneLabel": "Telefoon (Optioneel)",
+      "serviceLabel": "Service-interesse",
+      "descriptionLabel": "Projectbeschrijving *",
+      "captchaLabel": "CAPTCHA *",
+      "submitButton": "Bericht verzenden",
+      "namePlaceholder": "Uw volledige naam",
+      "emailPlaceholder": "uw.email@voorbeeld.nl",
+      "phonePlaceholder": "+31 (555) 123-4567",
+      "descriptionPlaceholder": "Vertel ons over uw projectvereisten...",
+      "captchaPlaceholder": "Voer de code in",
+      "selectService": "Selecteer een service",
+      "serviceOptions": {
+        "appDev": "App-ontwikkeling",
+        "webDev": "Website-ontwikkeling",
+        "digital": "Digitale Transformatie",
+        "gbp": "Google Bedrijfsprofiel",
+        "importExport": "Import Export",
+        "consultation": "Consultatie",
+        "other": "Andere"
+      },
+      "allowedChars": "Toegestane tekens: letters, cijfers en speciale tekens: . - ; @ : ? ! ,"
+    },
+    "services": {
+      "appDev": {
+        "title": "App-ontwikkeling",
+        "description": "Op maat gemaakte mobiele applicaties voor iOS- en Android-platforms met modern UI/UX-ontwerp."
+      },
+      "webDev": {
+        "title": "Website-ontwikkeling",
+        "description": "Professionele websites met SEO-optimalisatie en responsief ontwerp voor alle apparaten."
+      },
+      "digital": {
+        "title": "Digitale Transformatie",
+        "description": "Transformeer uw bedrijfsprocessen met geavanceerde digitale oplossingen."
+      }
+    }
+  },
+  
   "footer": {
     "company": {
       "name": "Vasanisha",
