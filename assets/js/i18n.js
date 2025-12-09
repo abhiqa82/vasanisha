@@ -22,7 +22,7 @@ const i18n = {
     supportedLanguages: ['en', 'de', 'nl', 'it'],
     
     // Debug mode (set to false in production)
-    debug: true,
+    debug: false,
     
     /**
      * Initialize i18n system
