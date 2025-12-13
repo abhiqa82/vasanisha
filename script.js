@@ -401,7 +401,7 @@ function submitContactForm(event) {
     
     // Prepare email template parameters
     const templateParams = {
-        to_email: 'abhishek.agawane@gmail.com',
+        to_email: 'vasanisha.tech@gmail.com',
         from_name: (formData.get('name') || 'Anonymous').trim(),
         from_email: formData.get('email'),
         phone: formData.get('phone') || 'Not provided',
@@ -475,7 +475,7 @@ function submitWorkWithUsForm(event) {
     
     // Prepare email template parameters for job application
     const templateParams = {
-        to_email: 'abhishek.agawane@gmail.com',
+        to_email: 'vasanisha.tech@gmail.com',
         from_name: formData.get('name'),
         from_email: formData.get('email'),
         phone: formData.get('phone') || 'Not provided',
@@ -520,7 +520,7 @@ function submitWorkWithUsForm(event) {
             }, 100);
         }, function(error) {
             console.log('FAILED...', error);
-            showMessage('Sorry, there was an error submitting your application. Please try again or contact us directly at abhishek.agawane@gmail.com', 'error');
+            showMessage('Sorry, there was an error submitting your application. Please try again or contact us directly at vasanisha.tech@gmail.com', 'error');
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
         });
