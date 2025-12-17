@@ -52,6 +52,14 @@
         <priority>0.8</priority>
     </url>
     
+    <!-- Textile Catalog Page -->
+    <url>
+        <loc>https://www.vasanisha.com/textile-catalog.html</loc>
+        <lastmod>2025-12-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
     <!-- Services Section (Anchor) -->
     <url>
         <loc>https://www.vasanisha.com/#services</loc>

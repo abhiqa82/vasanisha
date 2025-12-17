@@ -67,11 +67,15 @@ function displayCaptcha() {
 document.addEventListener('DOMContentLoaded', () => {
     displayCaptcha();
     
-    // Refresh CAPTCHA on click
-    const captchaImage = document.querySelector('.captcha-image');
-    if (captchaImage) {
-        captchaImage.addEventListener('click', displayCaptcha);
-    }
+    // Refresh CAPTCHA on click - handle both contact and textile forms
+    const captchaImages = document.querySelectorAll('.captcha-image');
+    captchaImages.forEach(captchaImage => {
+        captchaImage.addEventListener('click', function() {
+            const captcha = generateCaptcha();
+            this.textContent = captcha;
+            this.dataset.captcha = captcha;
+        });
+    });
 });
 
 // Form Validation Functions
@@ -371,6 +375,129 @@ function validateWorkWithUsForm() {
     return isValid;
 }
 
+// Textile Inquiry Form Validation
+function validateTextileInquiryForm() {
+    const form = document.getElementById('textileInquiryForm');
+    if (!form) return;
+
+    const name = document.getElementById('textileName').value;
+    const company = document.getElementById('textileCompany').value;
+    const email = document.getElementById('textileEmail').value;
+    const phone = document.getElementById('textilePhone').value;
+    const country = document.getElementById('textileCountry').value;
+    const product = document.getElementById('textileProduct').value;
+    const description = document.getElementById('textileDescription').value;
+    const captchaInput = document.getElementById('textileCaptcha').value;
+    const captchaImage = document.querySelector('#textileInquiryForm .captcha-image');
+    const correctCaptcha = captchaImage ? captchaImage.dataset.captcha : null;
+
+    let isValid = true;
+
+    // Clear previous error messages and highlighting
+    const formContainer = form.closest('.textile-form-container');
+    if (formContainer) {
+        formContainer.querySelectorAll('.form-error').forEach(error => error.remove());
+    }
+    form.querySelectorAll('.form-input, .form-textarea, select').forEach(field => {
+        field.style.borderColor = '';
+        field.style.boxShadow = '';
+    });
+
+    // Validate name (REQUIRED)
+    if (!name || !name.trim()) {
+        showFieldError('textileName', 'Name is required');
+        highlightErrorField('textileName', true);
+        isValid = false;
+    } else if (!validateName(name)) {
+        showFieldError('textileName', 'Name can only contain letters, spaces, hyphens, and apostrophes (min 2 characters)');
+        highlightErrorField('textileName', true);
+        isValid = false;
+    } else {
+        highlightErrorField('textileName', false);
+    }
+
+    // Validate company (REQUIRED)
+    if (!company || !company.trim()) {
+        showFieldError('textileCompany', 'Company name is required');
+        highlightErrorField('textileCompany', true);
+        isValid = false;
+    } else if (company.trim().length < 2) {
+        showFieldError('textileCompany', 'Company name must be at least 2 characters');
+        highlightErrorField('textileCompany', true);
+        isValid = false;
+    } else {
+        highlightErrorField('textileCompany', false);
+    }
+
+    // Validate email
+    if (!email) {
+        showFieldError('textileEmail', 'Email is required');
+        highlightErrorField('textileEmail', true);
+        isValid = false;
+    } else if (!validateEmail(email)) {
+        showFieldError('textileEmail', 'Please enter a valid email address');
+        highlightErrorField('textileEmail', true);
+        isValid = false;
+    } else {
+        highlightErrorField('textileEmail', false);
+    }
+
+    // Validate phone (REQUIRED for textile form)
+    if (!phone) {
+        showFieldError('textilePhone', 'Phone is required');
+        highlightErrorField('textilePhone', true);
+        isValid = false;
+    } else if (!validatePhone(phone)) {
+        showFieldError('textilePhone', 'Please enter a valid phone number (10-15 digits, e.g., +1 555-123-4567)');
+        highlightErrorField('textilePhone', true);
+        isValid = false;
+    } else {
+        highlightErrorField('textilePhone', false);
+    }
+
+    // Validate country (REQUIRED)
+    if (!country) {
+        showFieldError('textileCountry', 'Please select a country');
+        highlightErrorField('textileCountry', true);
+        isValid = false;
+    } else {
+        highlightErrorField('textileCountry', false);
+    }
+
+    // Validate product (REQUIRED)
+    if (!product) {
+        showFieldError('textileProduct', 'Please select a product interest');
+        highlightErrorField('textileProduct', true);
+        isValid = false;
+    } else {
+        highlightErrorField('textileProduct', false);
+    }
+
+    // Validate description (optional but must be valid if provided)
+    if (description && !validateDescription(description)) {
+        showFieldError('textileDescription', 'Description can only contain letters, numbers, and special characters: . - ; @ : ? ! , (max 200 characters)');
+        highlightErrorField('textileDescription', true);
+        isValid = false;
+    } else {
+        highlightErrorField('textileDescription', false);
+    }
+
+    // Validate CAPTCHA
+    if (!captchaInput) {
+        showFieldError('textileCaptcha', 'Please enter the CAPTCHA');
+        highlightErrorField('textileCaptcha', true);
+        isValid = false;
+    } else if (!correctCaptcha || !validateCaptcha(captchaInput, correctCaptcha)) {
+        showFieldError('textileCaptcha', 'CAPTCHA is incorrect');
+        highlightErrorField('textileCaptcha', true);
+        isValid = false;
+    } else {
+        highlightErrorField('textileCaptcha', false);
+    }
+
+    return isValid;
+}
+
 // Form Submission
 function submitContactForm(event) {
     event.preventDefault();
@@ -436,6 +563,84 @@ function submitContactForm(event) {
         }, function(error) {
             console.log('FAILED...', error);
             showMessage('Sorry, there was an error sending your message. Please try again or contact us directly.', 'error');
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        });
+}
+
+function submitTextileInquiryForm(event) {
+    event.preventDefault();
+    
+    if (!validateTextileInquiryForm()) {
+        return;
+    }
+
+    const submitBtn = document.querySelector('#textileInquiryForm .btn-primary');
+    const originalText = submitBtn.textContent;
+    submitBtn.innerHTML = '<span class="loading"></span> Sending...';
+    submitBtn.disabled = true;
+
+    // Get form data
+    const formData = new FormData(event.target);
+    
+    // Get current timestamp and date
+    const now = new Date();
+    const timestamp = now.toLocaleString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+    });
+    
+    // Prepare email template parameters
+    const templateParams = {
+        to_email: 'vasanisha.tech@gmail.com',
+        from_name: (formData.get('name') || 'Anonymous').trim(),
+        from_email: formData.get('email'),
+        phone: formData.get('phone') || 'Not provided',
+        company: formData.get('company') || 'Not provided',
+        country: formData.get('country') || 'Not provided',
+        product: formData.get('product') || 'Not specified',
+        quantity: formData.get('quantity') || 'Not specified',
+        message: formData.get('description') || 'Not provided',
+        timestamp: timestamp,
+        subject: `Textile Inquiry - ${(formData.get('name') || 'Anonymous').trim()} | ${formData.get('product') || 'General'} | ${timestamp}`,
+        reply_to: formData.get('email'),
+        custom_subject: `Textile Inquiry - ${(formData.get('name') || 'Anonymous').trim()} | ${formData.get('company') || 'N/A'} | ${formData.get('product') || 'General'}`
+    };
+
+    // Send email using EmailJS (using same template as contact form for now)
+    emailjs.send('service_abc123', 'template_contact123', templateParams)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            showMessage('Thank you for your inquiry! We will get back to you within 24 hours.', 'success');
+            document.getElementById('textileInquiryForm').reset();
+            // Refresh CAPTCHA for textile form
+            const textileCaptchaImage = document.querySelector('#textileInquiryForm .captcha-image');
+            if (textileCaptchaImage) {
+                const captcha = generateCaptcha();
+                textileCaptchaImage.textContent = captcha;
+                textileCaptchaImage.dataset.captcha = captcha;
+            }
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+            
+            // Scroll to thank you message
+            setTimeout(() => {
+                const messageElement = document.querySelector('.message.success');
+                if (messageElement) {
+                    messageElement.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'center' 
+                    });
+                }
+            }, 100);
+        }, function(error) {
+            console.log('FAILED...', error);
+            showMessage('Sorry, there was an error sending your inquiry. Please try again or contact us directly at vasanisha.tech@gmail.com', 'error');
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
         });
@@ -570,6 +775,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const workWithUsForm = document.getElementById('workWithUsForm');
     if (workWithUsForm) {
         workWithUsForm.addEventListener('submit', submitWorkWithUsForm);
+    }
+
+    // Textile inquiry form submission
+    const textileInquiryForm = document.getElementById('textileInquiryForm');
+    if (textileInquiryForm) {
+        textileInquiryForm.addEventListener('submit', submitTextileInquiryForm);
     }
 
     // File upload change event
