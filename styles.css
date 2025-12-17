@@ -137,6 +137,13 @@ p {
     font-weight: 700;
 }
 
+.nav-logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
