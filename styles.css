@@ -144,6 +144,17 @@ p {
     display: block;
 }
 
+.nav-logo .logo-text {
+    color: var(--primary-color);
+    margin: 0;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
