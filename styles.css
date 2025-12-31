@@ -1125,15 +1125,15 @@ select.error:focus {
     position: relative;
 }
 
-/* Import Export Hero Background Image */
-.import-export-hero {
+/* Import Export Hero Background Image - REMOVED */
+/* .import-export-hero {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                 url('images/banners/import-export-banner.png') !important;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
+} */
 
 /* Adjust spacing for section headers */
 .section-header {
